@@ -1,28 +1,14 @@
-
 ---
-coding: utf-8
-
 title: "Use cases, Network Scenarios and gap analys for Packet Optical Integration (POI) with coherent plugables under ACTN Framework"
 abbrev: "POI coherent pluggables"
 docname: draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-latest
 
 stand_alone: true
 ipr: trust200902
-area: "Routing"
+area: Routing Area
 wg: ccamp
 cat: info
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
-
-keyword:
- - coherent
- - photonic
- - pluggable
- - plugs
- - CMIS
- - I2C
- - OpenConfig
- - Optical
- - Packet
 
 keyword:
  - coherent
@@ -39,16 +25,15 @@ author:
   -
     ins: O. G. de. Dios
     fullname: Oscar Gonzalez de Dios
-    role: editor
     org: Telefonica
     email: oscar.gonzalezdedios@telefonica.com
 
- -
-    ins: J. Bouquier
+  -
+    ins:  J. B. 
     name: Jean-Francois Bouquier
     org: Vodafone
     email: jeff.bouquier@vodafone.com
-
+ 
   -
     ins: J. M.
     name: Julien Meuric
@@ -64,18 +49,19 @@ author:
   -
     ins: G. G.
     fullname: Gabriele Galimberti
-    organization: Individual
+    org: Individual
     email: ggalimbe56@gmail.com
-
+    
 contributor:
+
   -
     ins: A. Guo
     fullname: Aihua Guo
-    organization: Futurewei Technologies
+    org: Futurewei Technologies
     email: aihuaguo.ietf@gmail.com
+    
   -
     name: Brent Foster
-    role: editor
     org: Cisco
     street: Research Triangle Park
     city: North Carolina
@@ -84,39 +70,34 @@ contributor:
 
   -
     name: Daniele Ceccarelli
-    role: editor
     org: Cisco
     email: daniele.ietf@gmail.com
+    
   -
     ins: I. Busi
     fullname:  Italo Busi
-    organization: Huawei Technologies
+    org: Huawei Technologies
     email: italo.busi@huawei.com
 
   -
     name: Ori Gerstel
-    role: editor
     org: Cisco
     street: AMOT ATRIUM Tower 19th floor
     city: TEL AVIV-YAFO, TA
     country: Israel
     email: ogerstel@cisco.com
- -
+ 
+  -
     ins: N. Davis
     name: Nigel Davis
     org: Ciena
     email: ndavis@ciena.com
- -
+ 
+  -
     ins: R. Rokui
     name: Reza Rokui
     org: Ciena
     email: rrokui@ciena.com
--
-    ins: P. Maheshwari
-    fullname: Praveen Maheshwari
-    organization: Airtel
-    email: Praveen.Maheshwari@airtel.com
-
 
 normative:
 
