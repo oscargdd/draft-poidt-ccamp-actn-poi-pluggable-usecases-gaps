@@ -1,6 +1,9 @@
+
 ---
+coding: utf-8
+
 title: "Use cases, Network Scenarios and gap analys for Packet Optical Integration (POI) with coherent plugables under ACTN Framework"
-abbrev: "POI coherent plugables"
+abbrev: "POI coherent pluggables"
 docname: draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-latest
 
 stand_alone: true
@@ -9,6 +12,17 @@ area: "Routing"
 wg: ccamp
 cat: info
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
+
+keyword:
+ - coherent
+ - photonic
+ - pluggable
+ - plugs
+ - CMIS
+ - I2C
+ - OpenConfig
+ - Optical
+ - Packet
 
 keyword:
  - coherent
