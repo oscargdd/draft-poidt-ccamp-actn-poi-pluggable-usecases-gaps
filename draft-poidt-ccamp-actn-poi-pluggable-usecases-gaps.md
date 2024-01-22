@@ -29,7 +29,7 @@ author:
     email: oscar.gonzalezdedios@telefonica.com
 
   -
-    ins:  J. Bouquier 
+    ins:  J. Bouquier
     name: Jean-Francois Bouquier
     org: Vodafone
     email: jeff.bouquier@vodafone.com
@@ -117,11 +117,6 @@ informative:
               title: "IPoWDM convergent SDN architecture - Motivation, technical definition & challenges"
               date: 2022-08-31
               target: https://telecominfraproject.com/wp-content/uploads/TIP_OOPT_MANTRA_IP_over_DWDM_Whitepaper-Final-Version3.pdf
-
-   ITU-T G.sup39:
-              title: "ITU-T Recommendation G.Sup39 (02/16): Optical system design and engineering considerations"
-              date: 2016-02-26
-              target: https://www.itu.int/rec/T-REC-G.Sup39-201602-I/en
 
 --- abstract
 
@@ -372,7 +367,7 @@ Note that there is no resilience in this scenario. (CHECK AS RESTORATION COULD B
 
 ## Sceanrio D- High capacity point to point optical connection between plug and xPonder
 
-This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-topo1}} to {{figure-topo4}} and covers a corner case, where one end of an optical service is terminated on a plug and the other end is terminated on a traditional xPonder (transponder or muxponder) with grey optics to a packet device. This scenario is encountered when one of the packet device does not support coherent plugables.
+This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-topo1}} to {{figure-topo3}} and covers a corner case, where one end of an optical service is terminated on a plug and the other end is terminated on a traditional xPonder (transponder or muxponder) with grey optics to a packet device. This scenario is encountered when one of the packet device does not support coherent plugables.
 
 ~~~
     Packet                                                             Packet
