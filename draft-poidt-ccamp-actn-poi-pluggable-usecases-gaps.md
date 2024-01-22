@@ -5,7 +5,7 @@ docname: draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-latest
 
 stand_alone: true
 ipr: trust200902
-area: Routing Area
+area: "Routing"
 wg: ccamp
 cat: info
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
