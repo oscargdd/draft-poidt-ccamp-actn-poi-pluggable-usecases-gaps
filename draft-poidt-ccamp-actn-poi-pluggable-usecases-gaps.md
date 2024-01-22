@@ -33,7 +33,7 @@ author:
     name: Jean-Francois Bouquier
     org: Vodafone
     email: jeff.bouquier@vodafone.com
- 
+
   -
     ins: J. Meuric
     name: Julien Meuric
@@ -51,7 +51,7 @@ author:
     fullname: Gabriele Galimberti
     org: Individual
     email: ggalimbe56@gmail.com
-    
+
 contributor:
 
   -
@@ -59,7 +59,7 @@ contributor:
     fullname: Aihua Guo
     org: Futurewei Technologies
     email: aihuaguo.ietf@gmail.com
-    
+
   -
     name: Brent Foster
     org: Cisco
@@ -72,7 +72,7 @@ contributor:
     name: Daniele Ceccarelli
     org: Cisco
     email: daniele.ietf@gmail.com
-    
+
   -
     ins: I. Busi
     fullname:  Italo Busi
@@ -86,13 +86,13 @@ contributor:
     city: TEL AVIV-YAFO, TA
     country: Israel
     email: ogerstel@cisco.com
- 
+
   -
     ins: N. Davis
     name: Nigel Davis
     org: Ciena
     email: ndavis@ciena.com
- 
+
   -
     ins: R. Rokui
     name: Reza Rokui
