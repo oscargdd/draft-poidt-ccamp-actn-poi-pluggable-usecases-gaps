@@ -23,31 +23,31 @@ keyword:
 
 author:
   -
-    ins: O. G. de. Dios
+    ins: O. G. de Dios
     fullname: Oscar Gonzalez de Dios
     org: Telefonica
     email: oscar.gonzalezdedios@telefonica.com
 
   -
-    ins:  J. B. 
+    ins:  J. Bouquier 
     name: Jean-Francois Bouquier
     org: Vodafone
     email: jeff.bouquier@vodafone.com
  
   -
-    ins: J. M.
+    ins: J. Meuric
     name: Julien Meuric
     org: Orange
     email: julien.meuric@orange.com
 
   -
-    ins: G. M.
+    ins: G. Mishra
     name: Gyan Mishra
-    org: Ciena
+    org: Verizon
     email: gyan.s.mishra@verizon.com
 
   -
-    ins: G. G.
+    ins: G. Galimberti
     fullname: Gabriele Galimberti
     org: Individual
     email: ggalimbe56@gmail.com
@@ -346,7 +346,7 @@ Note that there is no protection in this scenario.
 
 This scenario extends {{figure-topo2}} by making more flexible use of the fiber network infrastructure.
 
-As shown in {{figure-topo3}}, this scenario considers a point-to-point optical service over a metro/regional network (e.g., up to 500 km). The metro/regional network contains DWDM filters, amplifiers and optical switching. ({{pluggables-operators-requirements}}, Page 4, "Point to point connection over metro/regional areas").
+As shown in {{figure-topo3}}, this scenario considers a point-to-point optical service over a metro/regional network (e.g., up to 500 km). The metro/regional network contains DWDM filters, amplifiers and optical switching.
 
 Note that there is no resilience in this scenario. (CHECK AS RESTORATION COULD BE A CHOICE)
 
