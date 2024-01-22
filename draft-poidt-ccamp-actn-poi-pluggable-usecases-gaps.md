@@ -91,7 +91,7 @@ contributor:
     ins: N. Davis
     name: Nigel Davis
     org: Ciena
-    email: ndavis@ciena.com    
+    email: ndavis@ciena.com
  -
     ins: R. Rokui
     name: Reza Rokui
@@ -130,8 +130,7 @@ informative:
 
 --- abstract
 
-This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis of the data models and protocols to solve the use cases. 
-
+This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis of the data models and protocols to solve the use cases.
 
 --- middle
 
@@ -294,7 +293,7 @@ This section provides a set of packet over optical network scenarios, starting w
 
 ## Scenario 1 - High capacity point to point connection over dedicated direct fiber
 
-As depicted in {{figure-topo1}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using dedicated fiber. 
+As depicted in {{figure-topo1}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using dedicated fiber.
 
 Note that there is no amplification and no protection in this scenario.
 
@@ -316,11 +315,11 @@ Note that there is no amplification and no protection in this scenario.
 ~~~
 {: #figure-topo1 title="Network topology with dedicated direct fiber"}
 
-## Scenario B- High capacity point to point over shared fiber 
+## Scenario B- High capacity point to point over shared fiber
 
 This scenario extends {{figure-topo1}} by making more efficient use of the deployed fiber infrastructure.
 
-As shown in {{figure-topo2}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices.  
+As shown in {{figure-topo2}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using a physical optical network with DWDM filters and amplifiers. Several point-to-point connections can be multiplexed from the same packet devices.
 
 Note that there is no protection in this scenario.
 
@@ -350,7 +349,7 @@ Note that there is no protection in this scenario.
 
 ## Scenario 3 - High capacity point to point over metro-regional shared meshed network
 
-This scenario extends {{figure-topo2}} by making more flexible use of the fiber network infrastructure. 
+This scenario extends {{figure-topo2}} by making more flexible use of the fiber network infrastructure.
 
 As shown in {{figure-topo3}}, this scenario considers a point-to-point optical service over a metro/regional network (e.g., up to 500 km). The metro/regional network contains DWDM filters, amplifiers and optical switching. ({{pluggables-operators-requirements}}, Page 4, "Point to point connection over metro/regional areas").
 
@@ -378,7 +377,7 @@ Note that there is no resilience in this scenario. (CHECK AS RESTORATION COULD B
 
 ## Sceanrio D- High capacity point to point optical connection between plug and xPonder
 
-This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-topo1}} to {{figure-topo4}} and covers a corner case, where one end of an optical service is terminated on a plug and the other end is terminated on a traditional xPonder (transponder or muxponder) with grey optics to a packet device. This scenario is encountered when one of the packet device does not support coherent plugables. 
+This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-topo1}} to {{figure-topo4}} and covers a corner case, where one end of an optical service is terminated on a plug and the other end is terminated on a traditional xPonder (transponder or muxponder) with grey optics to a packet device. This scenario is encountered when one of the packet device does not support coherent plugables.
 
 ~~~
     Packet                                                             Packet
@@ -406,11 +405,10 @@ This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-
 * IP Lag Network topology where the IP link between two packet devices are provided by multiple coherent plugs
 * Practical network deployments which includes the mix of many network topologies explained above.
 
-# Operators' Use cases 
+# Operators' Use cases
 
 
-This section provides a set of packet over optical use cases which are applicable to any network topologies in Section 5. 
-
+This section provides a set of packet over optical use cases which are applicable to any network topologies in Section 5.
 
 # Security Considerations
 
@@ -423,6 +421,6 @@ This document has no IANA actions.
 
 # Acknowledgments
 
-This document has been made with consensus and contributions coming from multiple drafts with different visions.  
+This document has been made with consensus and contributions coming from multiple drafts with different visions.
 
 {:numbered="false"}
