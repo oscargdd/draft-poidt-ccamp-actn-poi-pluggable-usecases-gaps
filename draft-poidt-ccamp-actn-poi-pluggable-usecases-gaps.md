@@ -120,7 +120,7 @@ informative:
 
 --- abstract
 
-This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis of the data models and protocols to solve the use cases.
+This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis to solve the use cases.
 
 --- middle
 
@@ -281,7 +281,7 @@ In reality, the operators' packet over optical networks will most likely be a co
 
 This section provides a set of packet over optical network scenarios, starting with the most common ones.
 
-## Scenario 1 - High capacity point to point connection over dedicated direct fiber
+## Scenario A - High capacity point to point connection over dedicated direct fiber
 
 As depicted in {{figure-topo1}}, this scenario considers a point-to-point optical service over a short distance (e.g., up to 100 km) using dedicated fiber.
 
