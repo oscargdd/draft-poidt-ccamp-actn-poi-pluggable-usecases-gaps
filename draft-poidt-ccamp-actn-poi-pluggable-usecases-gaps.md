@@ -416,16 +416,16 @@ The above discovery includes inventory discovery by each controller and exposure
 Target is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent pluggable  failure)
 
 ### c.	End-to-end multi-layer performance management (valid for both)
-Target is to have the possibility to analyse through performance monitoring of the different layers mentioned above and be able, in case of end-to-end L2VPN/L3VPN service degradation, to identify the root cause of the degradation. For scaling purposes the target should be upon service fulfilment phase to set up the right TCAs associated to each layer that can allow to meet the L2VPN/L3VPN service SLA (e.g. latency, jitter, BW, etc.) 
+Target is to have the possibility to analyse through performance monitoring of the different layers mentioned above and be able, in case of end-to-end L2VPN/L3VPN service degradation, to identify the root cause of the degradation. For scaling purposes the target should be upon service fulfilment phase to set up the right TCAs associated to each layer that can allow to meet the L2VPN/L3VPN service SLA (e.g. latency, jitter, BW, etc.)
 
 ## 2.	Inter-domain link validation (valid for coherent pluggable)
 As described in [draft-ietf-teas-actn-poi-pluggable-02] even if the patch cord to connect coherent pluggables in the routers and optical nodes (add/drop filter of the ROADM) need to be done manually, these connections are prone to human mistakes. It would be highly beneficial for operators to have a mean to check/discover that the right pluggables have been connected to the right ROADM filter ports
 
 ## 3.	End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
-This use case is described in [draft-ietf-teas-actn-poi-applicability] for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is always required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases
+This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is always required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases
 
 ## 4.	Multi-layer protection with optical restoration support (valid for both but here focusing on the coherent pluggable)
-This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races. 
+This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races.
 
 ## 5.	More to be added
 
