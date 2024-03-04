@@ -410,10 +410,10 @@ The objective of the use case is to have a full end-to-end multi-layer view from
 #### Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')
 Once a pluggable module is inserted in the proper linecard port, the host device must recognise the hardware component (ZR+ pluggable module) and expose its attributes and capabilities to the controller. For example, ZR+ modules can share the operational-mode that summarize the most important pluggable characteristics (such as FEC type, modulation format, baud rate, bit rate, etc.). If the hardware component has been successfully recognised, the host device is then ready to create and expose the necessary logical arrangements.
 
-#### Inventory of Coherent DWDM pluggable (‘valid for coherent pluggable’).
+#### Inventory of Coherent DWDM pluggable ('valid for coherent pluggable').
 The domain controller exposes to the MDSC hardware inventory information of the devices under its supervision. For full router inventory (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang. In addition, it has to include the coherent pluggable transceiver capabilities. These include, for instance, operational-modes supported (ITU-T application codes, organizational modes), min/max central-frequency range supported, min/max output power supported, min/max received power supported etc. In case of discovery of any HW mismatch between coherent DWDM pluggable and router linecard port capabilities the controller shall report HW mismatch alarm to MDSC. An example is a linecard multi-rate port vs coherent DWDM pluggable with only one client/line rate (e.g. 1x400GE).
 
-#### Coherent pluggable OTSi service discovery information (‘valid for coherent pluggable’).
+#### Coherent pluggable OTSi service discovery information ('valid for coherent pluggable').
 
 Once a router-to-router connection with coherent pluggables has been created over a Network Media Channel in the optical Line system, then it is required to expose the OTSi service. The relevant OTSi information could be nominal-central-frequency, tx-output-power, operational-mode-ID, operational-status, admin-status etc.
 
