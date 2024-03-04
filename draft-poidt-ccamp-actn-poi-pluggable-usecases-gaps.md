@@ -106,13 +106,13 @@ contributor:
     org: Vodafone
     city: Madrid
     country: Spain
-    email: manuel-julian.lopez@vodafone.com
+    email: 
 -
     name: Jose Angel Pezez
     org: Vodafone
     city: Madrid
     country: Spain
-    email: jose-angel.perez@vodafone.com
+    email: 
 
 normative:
 
