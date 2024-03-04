@@ -101,6 +101,18 @@ contributor:
     city: TEL AVIV-YAFO, TA
     country: Israel
     email: ogerstel@cisco.com
+  -
+    name: Manuel Julian Lopez
+    org: Vodafone
+    city: Madrid
+    country: Spain
+    email: manuel-julian.lopez@vodafone.com
+-
+    name: Jose Angel Pezez
+    org: Vodafone
+    city: Madrid
+    country: Spain
+    email: jose-angel.perez@vodafone.com
 
 normative:
 
