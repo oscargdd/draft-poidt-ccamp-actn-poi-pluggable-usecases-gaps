@@ -55,11 +55,26 @@ author:
 contributor:
 
   -
+    ins: N. Davis
+    name: Nigel Davis
+    org: Ciena
+    email: ndavis@ciena.com
+
+  -
+    ins: R. Rokui
+    name: Reza Rokui
+    org: Ciena
+    email: rrokui@ciena.com
+  -
+    ins: E. Echeverry
+    fullname: Edward Echeverry
+    org: Telefonica
+    email: edward.echeverry@telefonica.com
+  -
     ins: A. Guo
     fullname: Aihua Guo
     org: Futurewei Technologies
     email: aihuaguo.ietf@gmail.com
-
   -
     name: Brent Foster
     org: Cisco
@@ -87,17 +102,7 @@ contributor:
     country: Israel
     email: ogerstel@cisco.com
 
-  -
-    ins: N. Davis
-    name: Nigel Davis
-    org: Ciena
-    email: ndavis@ciena.com
 
-  -
-    ins: R. Rokui
-    name: Reza Rokui
-    org: Ciena
-    email: rrokui@ciena.com
 
 normative:
 
@@ -397,40 +402,78 @@ This scenario, shown in {{figure-topo5}}and extends network topologies {{figure-
 
 # Operators' Use cases
 
+This section provides a set of packet over optical general use cases which are applicable to any network topologies in Section 4 and both for multi-layer networks using or not coherent pluggables in the routers. These use cases are presented following current operators’ priorities order. 
 
-This section provides a set of packet over optical general use cases which are applicable to any network topologies in Section 4.
-These use cases are presented following current operators’ priorities order and several of them were already mentioned in IETF118 ccamp meeting back in November [draft-poidt-ccamp-actn-poi-pluggable-02].
-
-In general those use cases are the same:
--	 for a traditional packet over optical integration based on grey interfaces in the IP routers and use of transponders/muxponders in the optical domain
--	For a packet over optical integration considering coherent WDM pluggables in the IP routers over a media channel/Network Media channel in the optical domain
-The mention ‘valid for both’ has been added in the name of each use case else ‘valid for coherent pluggable’ when the use case is specific to the coherent pluggable approach.
+The use cases a generally applicable for both the traditional packet over optical integration based on grey interfaces in the IP routers and use of transponders/muxponders in the optical domain and for the packet over optical integration considering coherent WDM pluggables in the IP routers over a media channel/Network Media channel in the optical domain. For clarification purposes, the mention ‘valid for both’ has been added in the name of each use case else ‘valid for coherent pluggable’ when the use case is specific to the coherent pluggable approach.
 
 ## 1.	End-to-end multi-layer visibility and management (valid for both)
 
 ### a.	End-to-end multi-layer network and service topology discovery
-Target is to have a full end-to-end multi-layer view from all the layers and their dependencies: service layer (e.g. L3VPN/L2VPN), transport layer (RSVP-TE, SR-TE), IP layer (IGP), Ethernet layer, OTN L1 layer (optional), DWDM L0 layer, OMS, OTS and fibre.
-The above discovery includes inventory discovery by each controller and exposure to the MDSC of the required information for a complete end-to-end multi-layer view of the network
+Target is to have a full end-to-end multi-layer view from all the layers and their inter-dependencies: service layer (e.g. L3VPN/L2VPN), transport layer (RSVP-TE, SR-TE), IP layer (IGP), Ethernet layer, OTN L1 layer (optional), photonic L0 layer (OCh, OMS, OTS and fibre).
+The above discovery includes inventory discovery by each controller and exposure to the MDSC of the required information for a complete end-to-end multi-layer view of the network.
+
+#### Coherent DWDM pluggable insertion in the router linecard port 
+Once a pluggable module is inserted in the proper linecard port, the host device must recognise the hardware component (ZR+ pluggable module) and expose its attributes and capabilities to the controller. For example, ZR+ modules can share the operational-mode that summarize the most important pluggable characteristics (such as FEC type, modulation format, baud rate, bit rate, etc.). If the hardware component has been successfully recognised, the host device is then ready to create and expose the necessary logical arrangements.
+
+#### Inventory of Coherent DWDM pluggable (‘valid for coherent pluggable’).
+The domain controller exposes to the MDSC hardware inventory information of the devices under its supervision. For full router inventory (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang. In addition, it has to include the coherent pluggable transceiver capabilities. These include, for instance, operational-modes supported (ITU-T application codes, organizational modes), min/max central-frequency range supported, min/max output power supported, min/max received power supported etc. In case of discovery of any HW mismatch between coherent DWDM pluggable and router linecard port capabilities the controller shall report HW mismatch alarm to MDSC. An example is a linecard multi-rate port vs coherent DWDM pluggable with only one client/line rate (e.g. 1x400GE).
+
+#### Coherent pluggable OTSi service discovery information (‘valid for coherent pluggable’). 
+
+Once a router-to-router connection with coherent pluggables has been created over a Network Media Channel in the optical Line system, then it is required to expose the OTSi service. The relevant OTSi information could be nominal-central-frequency, tx-output-power, operational-mode-ID, operational-status, admin-status etc.  
+
+#### Discovery of layer relationships
+
+In case the operational mode has already been configured, the host device and the controlller need to create the nececessary arrangements to navigate from the interface where the router traffic is injected up the port connecting to the fiber. That is, the layer hierarchy from L0 to L3 needs to be completed and exposed. 
+
 
 ### b.	End-to-end multi-layer event/fault management (valid for both)
-Target is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent pluggable  failure)
+The Target is this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). This use case is divided in two:
+* Correlation of ZR+ connection (OTSi service) operational-status with MC/NMC operational-status (‘valid for coherent pluggable)
+In this case, the target is to expose to the MDSC both the events/faults from the ZR+ connection (OTSi service) and ZR+ pluggables as well as for the MC/NMC associated to this ZR+ connection (OTSi service) in the DWDM Line system so that proper correlation can be performed at MDSC level
+
+* Correlation of coherent pluggable operational status, port status, Ethernet link operational status, IP link status 
+
 
 ### c.	End-to-end multi-layer performance management (valid for both)
-Target is to have the possibility to analyse through performance monitoring of the different layers mentioned above and be able, in case of end-to-end L2VPN/L3VPN service degradation, to identify the root cause of the degradation. For scaling purposes the target should be upon service fulfilment phase to set up the right TCAs associated to each layer that can allow to meet the L2VPN/L3VPN service SLA (e.g. latency, jitter, BW, etc.)
+In this use case, the goal is to have the possibility to analyse through performance monitoring of the different layers mentioned above and be able, in case of end-to-end L2VPN/L3VPN service degradation, to identify the root cause of the degradation. For scaling purposes, the target should be, upon service fulfilment phase, to set up the right TCAs associated to each layer that can allow to meet the L2VPN/L3VPN service SLA (e.g. in terms of latency, jitter, BW, etc.). This use case is divided in two:
+
+* Performance management of the ZR+ connection (OTSi service) (‘valid for coherent pluggable) 
+Target is to have the basic performance parameters of each OTSi service running between two pluggables exposed towards the MDSC. Best for operators could be to defined TCA (Threshold crossing alerts) from MDSC for each OTSI service and be notified only when the Thresholds defined are not met? Operator shall be able to decide which parameters and for which OTSi service. But all the parameters shall be visible if needed by operators.
+
+Note: Router shall provide also all the possible performance counters not only for OTSi service/Ethernet service etc. but also for the pluggable itself  
+
+As an example operators should have the ability to get visibility on pre-FEC-BER for a given OTSi service and see the trend before post-FEC-BER is affected
+ 
+* Performance management of the Ethernet link running over the OTSi service and also of the IP link running over this Ethernet link.
 
 ## 2.	Inter-domain link validation (valid for coherent pluggable)
-As described in [draft-ietf-teas-actn-poi-pluggable-02] even if the patch cord to connect coherent pluggables in the routers and optical nodes (add/drop filter of the ROADM) need to be done manually, these connections are prone to human mistakes. It would be highly beneficial for operators to have a mean to check/discover that the right pluggables have been connected to the right ROADM filter ports
+Documenting the patch cord that connects the port of the coherent DWDM pluggable in the routers to the optical node (e.g. to the right Add/Drop filter of the ROADM) is performed. This manual operation is prone to human mistakes. It would be highly beneficial for operators to have a mean to check/discover that the right pluggable has been connected to the desired ROADM port. This use case requires the ability to expose to the MDSC the power levels at coherent DWDM pluggable side and at ROADM port side to perform the right correlation and validation.
 
-## 3.	End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
-This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is always required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases
+## Pluggable to pluggable service Provisioning 
+The following specific coherent DWDM pluggable provisioning sub-cases are identified:
+* Manual Day 1 configuration (‘valid for coherent pluggable)
+Knowing the coherent pluggable characteristics (performance and optical impairments for a specific operational-mode-ID) optical planning and validation is performed and following parameters are communicated by optical team to IP team: nominal-central-frequency, tx-output-power, operational-mode-ID so that the coherent pluggables at both ends in the routers can be correctly configured (e.g. through P-PNC) in a manual way. As prerequisite before the coherent pluggable configuration, the optical team has properly configured the MC/NMC in the line system DWDM network through the O-PNC.
+*	Semi-manual Day 1 configuration (‘valid for coherent pluggable’)
+Same optical planning and validation is performed first by optical team and then parameters are provided to MDSC operations engineer so that they can be set-up at Hierarchical SDN controller level and provisioned by P-PNC in the corresponding router’s pluggables
+* Semi-Automated Day 1 configuration with Path Computation API request from MDSC towards O-PNC (‘valid for coherent pluggable’) based on trial and error.  
+* Fully automated Day 1 configuration (For future discussions)
 
-## 4.	Multi-layer protection with optical restoration support (valid for both but here focusing on the coherent pluggable)
-This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races.
 
-## 5.	More to be added
+## 4.	End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
+This use case is described in {{?I-D.draft-ietf-teas-actn-poi-applicability}} for the SR-TE case which is relevant as target use case for operators. If new connectivity is required between the routers and at optical level then full automation could be achieved. However considering PMO (Present Mode of Operation) in most operators, before an optical path is setup either between two native transponders or between two coherent pluggables in  routers, a detailed optical planning and validation is always required. So, the automation of this use case is considered more for future mode of operations (FMO) and has not the same priority as the previous two use cases.
+
+## 5.	End-to-end L3VPN/L2VPN service multi-layer with SLA constraints (TE constraints) with optical restoration support (valid for both but here focusing on the coherent pluggable)
+This use case has not the same priority as the previous ones as protection in multi-layer Core/Backhaul networks is usually implemented at IP layer (e.g. FRR with RSVP-TE, TI-LFA with SR and SR policies in SR-TE) to avoid proven protection races. 
+a.	ZR+ links over DWDM network can be considered out of the L0 control plane so that no restoration is applied to those links
+b.	ZR+ links over DWDM network can be considered part of the L0 control plane but no restoration is enabled for those links
+c.	ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links but nominal-central-frequeny is maintained unchanged after L0 restoration. Only output-power could be tuned for the new restored path determined by the L0 control plane
+d.	ZR+ links over DWDM network can be considered as part of the L0 control plane with restoration enabled for those links and nominal-central-frequency and output power need to be tuned for the new restored path determined by the L0 control plane.
+
 
 # Security Considerations
 
+TBD
 
 # IANA Considerations
 
