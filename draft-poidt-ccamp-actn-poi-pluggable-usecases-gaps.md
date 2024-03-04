@@ -108,7 +108,7 @@ contributor:
     country: Spain
     email: manuel-julian.lopez@vodafone.com
 -
-    name: Jose Angel Pezez 
+    name: Jose Angel Pezez
     org: Vodafone
     city: Madrid
     country: Spain
@@ -463,16 +463,14 @@ This use case is described in [draft-ietf-teas-actn-poi-applicability] for the S
 ## Pluggable to pluggable service Provisioning
 The following specific coherent DWDM pluggable provisioning sub-cases are identified:
 ### Manual Day 1 configuration (‘valid for coherent pluggable)
-Knowing the coherent pluggable characteristics (performance and optical impairments for a specific operational-mode-ID), the optical planning and validation process is performed and the following parameters are communicated by optical team to IP team: nominal-central-frequency, tx-output-power, operational-mode-ID so that the coherent pluggables at both ends in the routers can be correctly configured in a manual way (e.g. through P-PNC or any other mean). As prerequisite before the coherent pluggable configuration, the optical team has properly configured the Media Channel in the line system DWDM network through the O-PNC.  
+Knowing the coherent pluggable characteristics (performance and optical impairments for a specific operational-mode-ID), the optical planning and validation process is performed and the following parameters are communicated by optical team to IP team: nominal-central-frequency, tx-output-power, operational-mode-ID so that the coherent pluggables at both ends in the routers can be correctly configured in a manual way (e.g. through P-PNC or any other mean). As prerequisite before the coherent pluggable configuration, the optical team has properly configured the Media Channel in the line system DWDM network through the O-PNC.
 ###	Semi-manual Day 1 configuration (‘valid for coherent pluggable’)
 Same optical planning and validation is performed first by optical team and then parameters are provided to MDSC operations engineer so that they can be set-up at Hierarchical SDN controller level and provisioned by P-PNC in the corresponding router’s pluggables.
 ### Semi-Automated Day 1 configuration with Path Computation API request from MDSC towards PNC (‘valid for coherent pluggable’)
-In this use case the start of the pluggable to pluggable connectivity is triggered by the connectivity needs of a packet service (slice, vpn, etc...). 
-
-In the context of ACTC, the process would start with MDSC receiving the service request (e.g. L3VPN) (or service provisioning from a GUI) but a new optical connectivity is needed between two ZR/ZR+ pluggables which are already physically connected (patch cord) to ROADM nodes ports. MDSC sends a path computation request to the O-PNC asking for a specific MC/NMC between source Mux/Dmux and destination Mux/Dmux for a target bitrate (e.g. 400G) and O-PNC in coordination with planning tool calculates the optical path (after successful PCE computation) for this given bitrate (e.g. 400G) with a specific operational-mode-ID supported by these coherent pluggables. It validates the optical path defining the central-frequency, output-power, operational-mode-ID to be configured in the coherent pluggables. O-PNC updates the MDSC of successful optical path creation exposing this new optical path to the MDSC along with the nominal-central-frequency, the target-output-power, the operational-mode-ID for which this MC/NMC was created, etc. The optical path is provisioned but operational-status is disabled. The MDSC requests the relevant PNC to configure both source and target pluggables with the calculated parameters.
+In this use case the start of the pluggable to pluggable connectivity is triggered by the connectivity needs of a packet service (slice, vpn, etc...). In the context of ACTC, the process would start with MDSC receiving the service request (e.g. L3VPN) (or service provisioning from a GUI) but a new optical connectivity is needed between two ZR/ZR+ pluggables which are already physically connected (patch cord) to ROADM nodes ports. MDSC sends a path computation request to the O-PNC asking for a specific MC/NMC between source Mux/Dmux and destination Mux/Dmux for a target bitrate (e.g. 400G) and O-PNC in coordination with planning tool calculates the optical path (after successful PCE computation) for this given bitrate (e.g. 400G) with a specific operational-mode-ID supported by these coherent pluggables. It validates the optical path defining the central-frequency, output-power, operational-mode-ID to be configured in the coherent pluggables. O-PNC updates the MDSC of successful optical path creation exposing this new optical path to the MDSC along with the nominal-central-frequency, the target-output-power, the operational-mode-ID for which this MC/NMC was created, etc. The optical path is provisioned but operational-status is disabled. The MDSC requests the relevant PNC to configure both source and target pluggables with the calculated parameters.
 MDSC uses the coherent pluggable CRUD data model to be used on MPI to configure the corresponding ZR+ connection (OTSi service) in the source and destination coherent pluggables.
 This operation is supported by the PNC which will be in charge also to turn-on the laser and complete the optical path set-up. At this point the optical path will be moved to operational state and the Packet traffic starts to flow.
-### Fully automated Day 1 configuration 
+### Fully automated Day 1 configuration
 (For future discussions)
 
 ## 4.	End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both)
@@ -498,6 +496,6 @@ This document has no IANA actions.
 
 # Acknowledgments
 
-This document has been made with consensus and contributions coming from multiple drafts with different visions. We would like to thank all the participants in the IETF meeting discussions. 
+This document has been made with consensus and contributions coming from multiple drafts with different visions. We would like to thank all the participants in the IETF meeting discussions.
 
 {:numbered="false"}
