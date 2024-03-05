@@ -102,6 +102,14 @@ contributor:
     country: Israel
     email: ogerstel@cisco.com
 
+  -
+    name: Stefan Melin
+    org: Telia Company
+    city: Stockholm/Solna
+    country: Sweden
+    email: stefan.melin@teliacompany.com
+    
+
 normative:
 
    OIF-CMIS:
@@ -138,6 +146,7 @@ The following terms abbreviations are used in this document:
 * O-PNC: The control functions specializing in management/control of optical and photonic functions (virtual or physical). See {{actn-rfc}}
 * P-PNC: The control functions specializing in management/control of packet functions (virtual or physical). See {{actn-rfc}}
 * xPonder: Short for Transponder and/or Muxponder
+* MDSC: Multi-Domain Service Coordinator. see See {{actn-rfc}}
 
 # Introduction
 
@@ -423,7 +432,7 @@ In case the operational mode has already been configured, the host device and th
 
 
 ### End-to-end multi-layer event/fault management (valid for both)
-The Target is this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). This use case is divided in two:
+The Target in this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). This use case is divided in two:
 * Correlation of ZR+ connection (OTSi service) operational-status with MC/NMC operational-status (‘valid for coherent pluggable)
 In this case, the target is to expose to the MDSC both the events/faults from the ZR+ connection (OTSi service) and ZR+ pluggables as well as for the MC/NMC associated to this ZR+ connection (OTSi service) in the DWDM Line system so that proper correlation can be performed at MDSC level
 * Correlation of coherent pluggable operational status, port status, Ethernet link operational status, IP link status
