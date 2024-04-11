@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-09T00:33:13.929981+00:00",
+  "timestamp": "2024-04-11T00:33:25.470888+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -596,24 +596,26 @@
       "id": "PR_kwDOLDCSO85otA_N",
       "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
       "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/8",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "Sme791",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Just added one line to terminology, MDSC, my name as contributor.\r\n\r\nOn the sections about performance management, is this referring to 15 min/24 hour PM or arbitrary time intervals that can be implemented by streaming telemetry? Any reason to clarify this?",
       "createdAt": "2024-03-05T11:30:45Z",
-      "updatedAt": "2024-03-05T13:39:11Z",
+      "updatedAt": "2024-04-09T14:47:23Z",
       "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "a5aa0c4db8a44e513bdf1a10a916b4f2f20ecb86",
       "headRepository": "Sme791/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
       "headRefName": "patch-1",
       "headRefOid": "a1ff94b5692cd646989a140282c619c43e38a806",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-04-09T14:47:23Z",
+      "mergedAt": "2024-04-09T14:47:23Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "29f6500125e8335918306f0ddbe1e04e94005c31"
+      },
       "comments": [],
       "reviews": [
         {
