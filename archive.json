@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-16T00:32:42.397468+00:00",
+  "timestamp": "2024-04-18T00:32:45.291663+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -142,7 +142,7 @@
       "labels": [],
       "body": "- Can the pluggable have \"default values\"? (e.g. application code, frequency...)",
       "createdAt": "2024-04-02T15:32:35Z",
-      "updatedAt": "2024-04-08T13:01:58Z",
+      "updatedAt": "2024-04-16T14:54:44Z",
       "closedAt": null,
       "comments": [
         {
@@ -179,8 +179,34 @@
           "body": "I'd add to Julien Comments: the default configuration will be applied in absence of port configuration. I.e. the Pluggable slot has never hosted a pluggable or a service has never configured to that port.",
           "createdAt": "2024-04-08T13:01:57Z",
           "updatedAt": "2024-04-08T13:01:57Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "[Discovery_workflows.pptx](https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/files/14998752/Discovery_workflows.pptx)\r\n\r\nThese are the scenarios discusssed",
+          "createdAt": "2024-04-16T14:54:43Z",
+          "updatedAt": "2024-04-16T14:54:43Z"
         }
       ]
+    },
+    {
+      "number": 10,
+      "id": "I_kwDOLDCSO86F5JGN",
+      "title": "Add text to explain the pre-configuration in the pluggable for the discovery case",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/10",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "oscargdd",
+        "jbouqui153"
+      ],
+      "labels": [],
+      "body": "Add text to explain the pre-configuration in the pluggable for the discovery case",
+      "createdAt": "2024-04-16T15:32:20Z",
+      "updatedAt": "2024-04-16T15:32:20Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
