@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-21T00:36:12.750389+00:00",
+  "timestamp": "2024-04-23T00:33:32.204232+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -142,7 +142,7 @@
       "labels": [],
       "body": "- Can the pluggable have \"default values\"? (e.g. application code, frequency...)",
       "createdAt": "2024-04-02T15:32:35Z",
-      "updatedAt": "2024-04-16T14:54:44Z",
+      "updatedAt": "2024-04-22T10:43:53Z",
       "closedAt": null,
       "comments": [
         {
@@ -186,6 +186,13 @@
           "body": "[Discovery_workflows.pptx](https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/files/14998752/Discovery_workflows.pptx)\r\n\r\nThese are the scenarios discusssed",
           "createdAt": "2024-04-16T14:54:43Z",
           "updatedAt": "2024-04-16T14:54:43Z"
+        },
+        {
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Here is our proposal with Manolo as agreed in our last call to be added in \"Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')\" regarding the default parameters topic in pluggables. When I can I will do the Pull Request. Comments are welcome.\r\n\r\n\"Several coherent pluggables seem to come with a factory default set of parameters (e.g. default channel number, default launched power, default application code id, laser-on, admin-state enabled etc.). This factory default set of parameters varies from manufacturer to manufacturer. This can allow a \u201cplug&play\u201d mode of operation over point-to-point connections (e.g. single wavelength over dark fiber) of course limited to bookended solutions from the same Vendor and same factory default parameters. However, when the optical connection between two pluggables is targeted to run over a DWDM  Open Line System (OLS) network, optical validation & planning step is first required to determine the right target parameters values to be set in the pluggables before interconnecting them to their respective ROADM to avoid to impact any other existing optical channels already up and running in the OLS network.\r\nIt is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of default parameters may be fine but the default set of factory parameters shall be able to be overwritten through router CLI or through Packet PNC to another set of operational default parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC) shall always go back to this operator\u2019s default set of operational parameters where, for example, the laser-state shall be \u2018Off\u2019 and admin-state \u2018disabled\u2019.\"\r\n",
+          "createdAt": "2024-04-22T10:43:52Z",
+          "updatedAt": "2024-04-22T10:43:52Z"
         }
       ]
     },
