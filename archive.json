@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-23T00:33:32.204232+00:00",
+  "timestamp": "2024-04-25T00:35:57.790870+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -142,7 +142,7 @@
       "labels": [],
       "body": "- Can the pluggable have \"default values\"? (e.g. application code, frequency...)",
       "createdAt": "2024-04-02T15:32:35Z",
-      "updatedAt": "2024-04-22T10:43:53Z",
+      "updatedAt": "2024-04-23T12:33:55Z",
       "closedAt": null,
       "comments": [
         {
@@ -193,6 +193,13 @@
           "body": "Here is our proposal with Manolo as agreed in our last call to be added in \"Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')\" regarding the default parameters topic in pluggables. When I can I will do the Pull Request. Comments are welcome.\r\n\r\n\"Several coherent pluggables seem to come with a factory default set of parameters (e.g. default channel number, default launched power, default application code id, laser-on, admin-state enabled etc.). This factory default set of parameters varies from manufacturer to manufacturer. This can allow a \u201cplug&play\u201d mode of operation over point-to-point connections (e.g. single wavelength over dark fiber) of course limited to bookended solutions from the same Vendor and same factory default parameters. However, when the optical connection between two pluggables is targeted to run over a DWDM  Open Line System (OLS) network, optical validation & planning step is first required to determine the right target parameters values to be set in the pluggables before interconnecting them to their respective ROADM to avoid to impact any other existing optical channels already up and running in the OLS network.\r\nIt is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of default parameters may be fine but the default set of factory parameters shall be able to be overwritten through router CLI or through Packet PNC to another set of operational default parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC) shall always go back to this operator\u2019s default set of operational parameters where, for example, the laser-state shall be \u2018Off\u2019 and admin-state \u2018disabled\u2019.\"\r\n",
           "createdAt": "2024-04-22T10:43:52Z",
           "updatedAt": "2024-04-22T10:43:52Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Thanks for the proposal. Comments below:\r\n\r\n1) The \u00b7pre-configuration can come from factory, or operator-driven. E.g. you want to pre-tune your pluggables, etc... It might be useful in some scenarios.  \r\n\r\nText suggestion:\r\n\r\n\"Coherent pluggables can come with a default set of parameters, either by factory settings or pre-configured by the operator. Pre-configured parameters might include default channel number, default launched power, default application code id, laser-on, admin-state enabled etc..\"\r\n\r\n2) The fact that it varies is because there is no \"enforcement\" by any standard right? I also understood that CMIS defines (or maybe recommends...) some defaul parameters. \r\n\r\nText suggestoin:\r\n\r\n\"This factory default set of parameters varies from manufacturer to manufacturer, as the standard does not mandate a given set of values, even though some parameters have default values.\"\r\n\r\n3) I would add that the recommendation is that, independently wethere the pluggable comes with a valid pre-configuration or not, it should not inmideatly start transmitting.\r\n\r\nText suggestion:\r\n\r\n\"In order to avoid unintentionally harming other channels, it is recommended that after a pluggable is connected to the router, by default, the laser is off, and the operator (or the controller) should explictly enable the transceiver.\"\r\n\r\n4) \"overwritten through router CLI or through Packet PNC\". I think we need to hightlight the the router can have also been preconfigured, and it MUST take prececence over the pluggable. If you modify later, it is a normal case...  Also, I would be agnostic of who configured that (maybe saying management or control is fine) I would suggest:\r\n\r\n\"shall be overwritten throught the configuration stored in the router, which might have been provided by management or controller means. \"\r\n\r\n\r\nWhen you make the PR, I make the suggestions there directly, we can continue the discussion here\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "createdAt": "2024-04-23T12:33:54Z",
+          "updatedAt": "2024-04-23T12:33:54Z"
         }
       ]
     },
@@ -665,6 +672,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOLDCSO85tnu28",
+      "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/11",
+      "state": "OPEN",
+      "author": "jbouqui153",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "VF proposal as described issue #9 with some minor rewording",
+      "createdAt": "2024-04-24T15:50:17Z",
+      "updatedAt": "2024-04-24T15:50:18Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "29f6500125e8335918306f0ddbe1e04e94005c31",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "default_parameters",
+      "headRefOid": "7c5b30770b5601bbe591f2bf9c11a570e837d325",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
