@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-30T00:32:38.029021+00:00",
+  "timestamp": "2024-05-02T00:33:15.077426+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -219,6 +219,22 @@
       "body": "Add text to explain the pre-configuration in the pluggable for the discovery case",
       "createdAt": "2024-04-16T15:32:20Z",
       "updatedAt": "2024-04-16T15:32:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 12,
+      "id": "I_kwDOLDCSO86HamH2",
+      "title": "Unique identification of pluggable",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/12",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "The requirement is to be able to know which type of pluggable  is availble, so it't characterization can be obtained by the controller. This does not preclude that the controller also discovers capabilities real time from the pluggable and verifies them vs the expectations from the pre-characterization. \r\n\r\nIt is required to standardize which parameters to use in this identification (from ivy and/ openconfig).\r\n ",
+      "createdAt": "2024-04-30T15:59:54Z",
+      "updatedAt": "2024-04-30T15:59:54Z",
       "closedAt": null,
       "comments": []
     }
