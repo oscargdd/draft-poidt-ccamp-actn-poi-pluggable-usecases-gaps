@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-21T00:35:01.296898+00:00",
+  "timestamp": "2024-05-23T00:34:39.603019+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -235,6 +235,22 @@
       "body": "The requirement is to be able to know which type of pluggable  is availble, so it't characterization can be obtained by the controller. This does not preclude that the controller also discovers capabilities real time from the pluggable and verifies them vs the expectations from the pre-characterization. \r\n\r\nIt is required to standardize which parameters to use in this identification (from ivy and/ openconfig).\r\n ",
       "createdAt": "2024-04-30T15:59:54Z",
       "updatedAt": "2024-04-30T15:59:54Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 13,
+      "id": "I_kwDOLDCSO86Jl_qC",
+      "title": "Figure 3 update",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/13",
+      "state": "OPEN",
+      "author": "sergiobelotti",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "For alignment with figure 1 and 2 , the dotted line between packet device 1 with pluggable and Photonics should be named \"WDM Optics\" (as in figure 2A) and the dotted line between packet device 3 and xPonder should be named \"Grey Optics\" (as in figure 1)\r\n",
+      "createdAt": "2024-05-21T14:24:59Z",
+      "updatedAt": "2024-05-21T14:24:59Z",
       "closedAt": null,
       "comments": []
     }
