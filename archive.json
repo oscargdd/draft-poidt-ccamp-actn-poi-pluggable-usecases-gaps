@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-28T00:35:10.744124+00:00",
+  "timestamp": "2024-05-30T00:35:21.542864+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -251,6 +251,22 @@
       "body": "For alignment with figure 1 and 2 , the dotted line between packet device 1 with pluggable and Photonics should be named \"WDM Optics\" (as in figure 2A) and the dotted line between packet device 3 and xPonder should be named \"Grey Optics\" (as in figure 1)\r\n",
       "createdAt": "2024-05-21T14:24:59Z",
       "updatedAt": "2024-05-21T14:24:59Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 14,
+      "id": "I_kwDOLDCSO86KXaN7",
+      "title": "breakout use case?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/14",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Add breakout use case with the operator's requirements",
+      "createdAt": "2024-05-28T15:39:04Z",
+      "updatedAt": "2024-05-28T15:39:04Z",
       "closedAt": null,
       "comments": []
     }
