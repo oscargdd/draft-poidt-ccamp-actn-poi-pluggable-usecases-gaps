@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-25T00:35:55.864149+00:00",
+  "timestamp": "2024-06-27T00:36:12.004480+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -267,6 +267,38 @@
       "body": "Add breakout use case with the operator's requirements",
       "createdAt": "2024-05-28T15:39:04Z",
       "updatedAt": "2024-05-28T15:39:04Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 15,
+      "id": "I_kwDOLDCSO86NcL1h",
+      "title": "Add use case on maintenance or in-service upgrades at the optical layer",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/15",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-25T15:22:47Z",
+      "updatedAt": "2024-06-25T15:22:47Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 16,
+      "id": "I_kwDOLDCSO86NcYI5",
+      "title": "review from deborah",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/16",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "While day 1 (startup) is described, don\u2019t see anything on maintenance or in-service upgrades at the optical layer. A couple of notes (covered in some of the multi-layer RFCs done previously):\r\n\r\n-\tAvoid disruption in the network \u2013 minimal impacts on both optical and packet. Do not want to trigger a network-wide router software update when performing operations on an optical module.\r\n-\tRecommend module software \u2013 software upgrades/maintenance on the packet level or optical level are not disruptive on the other level.\r\n-\tNeed to manage properly, including security levels for the different entities.\r\n-\tI noted it is said \u201cno protection\u201d \u2013 maybe want to soften to say \u201cprotection/restoration is for further study\u201d?\r\n-\tMeasures to include  network wide multi-layer re-optimization strategy to prevent fragmentation and optimal use of capacity (e.g., RFC5557 provides guidance when using a PCE).\r\n-\tMeasures to protect against network destabilization\r\n-\tMeasures are needed to support graceful deletion at all layers\r\n-\tFault escalation strategy to coordinate across the layers\r\n-\tMechanisms for aggregating, summarizing, enabling and disabling of inter-layer notifications so as not to overwhelm the controller.\r\n\r\nA couple of wording nits:\r\n\r\n-\tSection 2 \u201cwhich results in non-optimal and inefficient networking\u201d/s/\u201dwhich may result in non-optimal and inefficient networking\u201d (marketing/opinion)\r\n-\tSection 2 \u201cPlacing coherent plugs..can reduce\u201d/s/\u201dPlacing coherent plugs..may reduce\u201d (marketing/opinion)\r\n-\tSection 5.6 \u201cto avoid proven protection races\u201d/s/\u201dto avoid possible protection races\u201d (proven? May happen if the multi-layers are not managed correctly, a vendor fails to implement proper detection/escalation).\r\n",
+      "createdAt": "2024-06-25T15:45:54Z",
+      "updatedAt": "2024-06-25T15:45:54Z",
       "closedAt": null,
       "comments": []
     }
