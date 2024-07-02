@@ -13,7 +13,7 @@
 <meta content="
        This document provides general overarching guidelines for control and management of packet over optical converged networks with coherent pluggables and focuses on operators' use cases and network scenarios. It provides a set of use cases which are needed for the control and management of the packet over optical networks which comprise devices with mixes of packet and optical functions where the optical functions may be provided on coherent pluggables. The document provides a gap analysis to solve the use cases. 
     " name="description">
-<meta content="xml2rfc 3.20.0" name="generator">
+<meta content="xml2rfc 3.21.0" name="generator">
 <meta content="coherent" name="keyword">
 <meta content="photonic" name="keyword">
 <meta content="pluggable" name="keyword">
@@ -25,18 +25,18 @@
 <meta content="Packet" name="keyword">
 <meta content="draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.20.0
-    Python 3.11.8
+  xml2rfc 3.21.0
+    Python 3.12.3
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
-    Jinja2 3.1.2
-    lxml 4.9.3
-    platformdirs 4.2.0
+    Jinja2 3.1.4
+    lxml 4.9.4
+    platformdirs 4.2.2
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
-    setuptools 68.2.2
+    setuptools 69.5.1
     six 1.16.0
     wcwidth 0.2.13
 -->
@@ -1037,11 +1037,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">POI coherent pluggables</td>
-<td class="right">March 2024</td>
+<td class="right">July 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">de Dios, et al.</td>
-<td class="center">Expires 5 September 2024</td>
+<td class="center">Expires 3 January 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1054,12 +1054,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-03-04" class="published">4 March 2024</time>
+<time datetime="2024-07-02" class="published">2 July 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-09-05">5 September 2024</time></dd>
+<dd class="expires"><time datetime="2025-01-03">3 January 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 5 September 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 3 January 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1271,6 +1271,9 @@ document are to be interpreted as described in <span>[<a href="#RFC2119" class="
 </li>
         <li class="normal" id="section-1-3.4">
           <p id="section-1-3.4.1">xPonder: Short for Transponder and/or Muxponder<a href="#section-1-3.4.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-1-3.5">
+          <p id="section-1-3.5.1">MDSC: Multi-Domain Service Coordinator. see See <span>[<a href="#actn-rfc" class="cite xref">actn-rfc</a>]</span><a href="#section-1-3.5.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -1642,7 +1645,9 @@ document are to be interpreted as described in <span>[<a href="#RFC2119" class="
             <h5 id="name-coherent-dwdm-pluggable-ins">
 <a href="#section-5.1.1.1" class="section-number selfRef">5.1.1.1. </a><a href="#name-coherent-dwdm-pluggable-ins" class="section-name selfRef">Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')</a>
             </h5>
-<p id="section-5.1.1.1-1">Once a pluggable module is inserted in the proper linecard port, the host device must recognise the hardware component (ZR+ pluggable module) and expose its attributes and capabilities to the controller. For example, ZR+ modules can share the operational-mode that summarize the most important pluggable characteristics (such as FEC type, modulation format, baud rate, bit rate, etc.). If the hardware component has been successfully recognised, the host device is then ready to create and expose the necessary logical arrangements.<a href="#section-5.1.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-5.1.1.1-1">Once a pluggable module is inserted in the proper linecard port, the host device must recognise the hardware component (e.g. 400G ZR+ pluggable module) and expose its attributes and capabilities to the controller. For example, ZR+ modules can share the operational-mode-IDs supported that summarize the most important pluggable characteristics (such as FEC type, modulation format, baud rate, bit rate, etc.). If the hardware component has been successfully recognised, the host device is then ready to create and expose the necessary logical arrangements.<a href="#section-5.1.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-5.1.1.1-2">Several coherent pluggables seem to come with a factory default set of provisioning parameters (e.g. default channel number, default launched power, default application code id, laser-on, admin-state enabled etc.). This factory default set of provisioning parameters varies from manufacturer to manufacturer. This can allow a “plug&amp;play” mode of operation over point-to-point connections (e.g. single wavelength over dark fiber) of course limited to bookended solutions from the same Vendor and same factory default provisioning parameters. However, when the optical connection between two pluggables is targeted to run over a DWDM Open Line System (OLS) network, optical validation &amp; planning step is first required to determine the right target provisioning parameters values to be set in the pluggables before interconnecting them to their respective ROADM to avoid to impact any other existing optical channels already up and running in the OLS network.
+It is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of factory default provisioning parameters may be fine but they shall always be able to be overwritten through router CLI or through Packet PNC to another set of  default provisioning parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC or due to a power off/on) shall always go back to this operator’s default set of provisioning parameters where, for example, the laser-state shall be ‘Off’ and admin-state ‘disabled’.<a href="#section-5.1.1.1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="inventory-of-coherent-dwdm-pluggable-valid-for-coherent-pluggable">
@@ -1676,7 +1681,7 @@ document are to be interpreted as described in <span>[<a href="#RFC2119" class="
           <h4 id="name-end-to-end-multi-layer-even">
 <a href="#section-5.1.2" class="section-number selfRef">5.1.2. </a><a href="#name-end-to-end-multi-layer-even" class="section-name selfRef">End-to-end multi-layer event/fault management (valid for both)</a>
           </h4>
-<p id="section-5.1.2-1">The Target is this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). This use case is divided in two:
+<p id="section-5.1.2-1">The Target in this use case is to have a full end-to-end multi-layer correlation of events at different layers and domains (e.g. operational-status changes reported at OTS/OMS/OCh/ODUk (optional), IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root cause can be quickly identified and fixed (e.g. fibre cut vs coherent DWDM pluggable  failure). This use case is divided in two:
 * Correlation of ZR+ connection (OTSi service) operational-status with MC/NMC operational-status (‘valid for coherent pluggable)
 In this case, the target is to expose to the MDSC both the events/faults from the ZR+ connection (OTSi service) and ZR+ pluggables as well as for the MC/NMC associated to this ZR+ connection (OTSi service) in the DWDM Line system so that proper correlation can be performed at MDSC level
 * Correlation of coherent pluggable operational status, port status, Ethernet link operational status, IP link status<a href="#section-5.1.2-1" class="pilcrow">¶</a></p>
@@ -1908,6 +1913,16 @@ d.      ZR+ links over DWDM network can be considered as part of the L0 control 
 <div class="email">
 <span>Email:</span>
 <a href="mailto:ogerstel@cisco.com" class="email">ogerstel@cisco.com</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Stefan Melin</span></div>
+<div dir="auto" class="left"><span class="org">Telia Company</span></div>
+<div dir="auto" class="left"><span class="locality">Stockholm/Solna</span></div>
+<div dir="auto" class="left"><span class="country-name">Sweden</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:stefan.melin@teliacompany.com" class="email">stefan.melin@teliacompany.com</a>
 </div>
 </address>
 </section>
