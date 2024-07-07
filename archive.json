@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-04T00:36:41.019536+00:00",
+  "timestamp": "2024-07-07T00:40:26.802914+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -813,7 +813,7 @@
       "labels": [],
       "body": "VF proposal as described issue #9 with some minor rewording",
       "createdAt": "2024-04-24T15:50:17Z",
-      "updatedAt": "2024-07-02T14:10:47Z",
+      "updatedAt": "2024-07-05T08:34:59Z",
       "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "29f6500125e8335918306f0ddbe1e04e94005c31",
@@ -827,7 +827,34 @@
         "oid": "4b08b58423cf5b4d3fe726f516ea689bd8b4a0a5"
       },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86AwfUK",
+          "commit": {
+            "abbreviatedOid": "7c5b307"
+          },
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T08:10:15Z",
+          "updatedAt": "2024-07-05T08:34:59Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "channel number -> channel identifier\r\nlimited to bookended solutions from -> limited to transceiver pairs from ",
+              "createdAt": "2024-07-05T08:10:15Z",
+              "updatedAt": "2024-07-05T08:34:59Z"
+            },
+            {
+              "originalPosition": 8,
+              "body": "I'm not sure I get the idea behind \"the same kind of commissioning phase\". The following sentences allow different approaches (which is fine), provided the operator remains in control in all cases: that's what we should promote, but the initial wording is confusing.\r\nI would also reserve the term \"default\" to refer to the factory values and make it clearer operators want to control the running parameters, even on startup, whatever the factory values.\r\nNEW: \"the use of factory default provisioning parameters may be fine but the operator must always be able to override them through router CLI or Packet PNC to another set of startup provisioning parameters that will change from pluggable to pluggable when deployed over an OLS network. A reset of the pluggable (through router CLI/Packet PNC, or due to a power off/on) shall always go back to this operator-custom set of provisioning parameters (e.g., laser-state to \u2018Off\u2019 and admin-state to \u2018disabled\u2019).\"",
+              "createdAt": "2024-07-05T08:19:43Z",
+              "updatedAt": "2024-07-05T08:34:59Z"
+            }
+          ]
+        }
+      ]
     },
     {
       "number": 20,
