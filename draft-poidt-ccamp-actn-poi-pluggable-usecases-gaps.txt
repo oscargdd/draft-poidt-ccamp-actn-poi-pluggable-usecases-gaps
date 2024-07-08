@@ -5,14 +5,14 @@
 ccamp                                                      O. G. de Dios
 Internet-Draft                                                Telefonica
 Intended status: Informational                               J. Bouquier
-Expires: 5 September 2024                                       Vodafone
+Expires: 9 January 2025                                         Vodafone
                                                                J. Meuric
                                                                   Orange
                                                                G. Mishra
                                                                  Verizon
                                                            G. Galimberti
                                                               Individual
-                                                            4 March 2024
+                                                             8 July 2024
 
 
     Use cases, Network Scenarios and gap analysis for Packet Optical
@@ -57,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 September 2024.
+   This Internet-Draft will expire on 9 January 2025.
 
 Copyright Notice
 
@@ -129,26 +129,31 @@ Table of Contents
 
    *  O-PNC: The control functions specializing in management/control of
       optical and photonic functions (virtual or physical).  See
-      [actn-rfc]
+      [RFC8453]
 
    *  P-PNC: The control functions specializing in management/control of
-      packet functions (virtual or physical).  See [actn-rfc]
+      packet functions (virtual or physical).  See [RFC8453]
 
    *  xPonder: Short for Transponder and/or Muxponder
 
+   *  MDSC: Multi-Domain Service Coordinator. see See [RFC8453]
+
 2.  Introduction
 
-   Packet traffic has been transferred over optical networks for many
-   years blending the benefits of optical transmission and switching
-   with packet switching.  Optical systems have been separated from
-   packet systems, both of which have had specific dedicated devices.
-   In many existing network deployments, the packet and the optical
-   networks are engineered, operated and controlled independently.  The
-   operation of these packet and optical networks is often siloed which
-   results in non-optimal and inefficient networking.  Both packet and
-   optical systems have had relatively independent evolution.  Optical
-   systems have been developed with increasing capacity especially with
-   the emergence of coherent optical techniques.
+   Packet traffic is predominatly transferred over optical interfaces,
+   some of which connect to optical networks or Optical Line Systems.
+   Optical Line systems have been separated from packet systems, both of
+   which have had specific dedicated devices.  In many existing network
+   deployments, packet networks includingb direct connect electrical and
+   optical interfaces and the optical networks are engineered, operated
+   and controlled independently.  The operation of these packet and
+   optical line networks is often siloed which results in non-optimal
+   and inefficient networking.  Both packet and optical systems have had
+   relatively independent evolution.  Optical interface technology has
+   been developed with increasing capacity.  Meanwhile standardization
+   has been progressed to a point where interoperable optical
+   specifications are available, especially with the emergence of
+   coherent optical techniques.
 
    Optical component design has continued to improve density to the
    point where a whole coherent optical terminal system that use to
@@ -161,22 +166,28 @@ Table of Contents
    solutions).
 
    Optical transmission/switching is analogue and requires complex and
-   holistic control.  Consequently, coordination of control of the
-   coherent plugs (in a device with packet functions) with the control
-   of the rest of the optical network is highly desirable as this best
-   enables robust network functionality and simplifies network
+   holistic analog control.  Consequently, coordination of control of
+   the coherent plugs (in a device with packet functions) with the
+   control of the rest of the optical network is highly desirable as
+   this best enables robust network functionality and simplifies network
    operations.
 
    The combination of these above trends along with the desire to select
-   best in breed components has led to the emergence of open optical
-   plugs that offer a standard bus for traffic and that use CMIS
-   [OIF-CMIS], extended with Coherent CMIS, between coherent pluggables
-   and host device.  These plugs are such that a plug from vendor X can
-   be installed in vendor Y's device with packet functions etc.
+   best in breed components has led to the need for a standard way to
+   control Coherent Modules between coherent pluggables and host device.
+   Coherent Modules are more complex than non-coherent modules and led
+   to extensions of Coherent CMIS [OIF-CMIS].  Standardization of CMIS
+   is intended such that a plug from vendor X can be installed in vendor
+   Y's device.
 
-   An architecture analysis has been carried out by the MANTRA sub-group
-   in the OOPT / TIP group (Open Optical & Packet Transport / Telecom
-   Infra Project)
+   The applicability of Abstraction and Control of TE Networks (ACTN)
+   architecture [RFC8453] to Packet Optical Integration (POI) in the
+   context of IP/MPLS and optical internetworking has been analyzed in
+   [I-D.draft-ietf-teas-actn-poi-applicability].  This document further
+   extends to applicability of ACTN with the integration of coherent
+   pluggables in IP/MPLS devices.  An architecture analysis has been
+   carried out by the MANTRA sub-group in the OOPT / TIP group (Open
+   Optical & Packet Transport / Telecom Infra Project)
    [MANTRA-whitepaper-IPoWDM-convergent-SDN-architecture].
 
    This document provides guidellines for control and management of
@@ -196,11 +207,11 @@ Table of Contents
 
    A packet over optical network represents an efficient paradigm that
    harnesses the power of both packet-switching and optical
-   technologies.  In this approach, the overlay IP or MPLS packets are
-   transmitted through an underlying optical network.  The fusion of
-   packet and optical networks offer a host of advantages, including
-   accelerated data transfer rates, diminished latency, and expanded
-   network capacity.
+   technologies.  In this approach, some of the links of an overlay IP
+   or MPLS packet network interface an underlying optical network.  The
+   fusion of packet and optical networks offer a host of advantages,
+   including accelerated data transfer rates, diminished latency, and
+   expanded network capacity.
 
    In general, two deployment models can be used to deploy the packet
    over optical networks:
@@ -212,19 +223,20 @@ Table of Contents
 3.1.  Traditional Architecture Deployment Model
 
    The traditional architecture involves separation of the packet
-   network from the optical network as shown in Figure 1.  In
-   traditional approach, the packet layer responsible for routing and
-   forwarding is decoupled from the underlying optical transport layer.
-   This approach offers several benefits, including the ability to scale
-   each layer independently, optimize resource utilization, and simplify
-   network management through centralized software control.
+   network from an optical network as shown in Figure 1.  In traditional
+   approach, the packet network responsible for packet routing and
+   forwarding is logically decoupled from the underlying optical
+   transport network.  This approach offers several benefits, including
+   the ability to scale each network independently, optimize resource
+   utilization, and simplify network management through dedicated
+   software control.
 
    Disaggregation enables network operators to choose best-of-breed
    components for each layer, fostering innovation and competition in
    the networking industry.  However, implementing and managing a
    disaggregated network also comes with challenges related to
    interoperability, integration, and maintaining end-to-end performance
-   across the various layers.
+   across the various networks.
 
          |----------|                                   |----------|
          |  Packet  |           IP Link                 |  Packet  |
@@ -255,25 +267,33 @@ Table of Contents
 3.2.  Deployment Model with Coherent Pluggables
 
    The second approach is to take advantage of the small implementation
-   footprint of the xPonder functions and to deploy these functions on a
-   single small form factor plug (aka Coherent pluggables) and then
-   place plugs directly into the packet devices as shown in Figure 2(A).
-   Placing this small form factor pluggable in a device with packet
-   functions can reduce network cost, power consumption and footprint
-   (when these benefits are not outweighed by other engineering
-   considerations).  Depending on the application, distance between
-   packet devices, quality of fibers and so on it might be that there is
-   no need for a ROADM network, i.e., direct connectivity between packet
-   devices via plugs is possible.
+   footprint of single small form factor pluggables (aka Coherent
+   pluggables) and then place plugs directly into the packet devices as
+   shown in Figure 2(A).  Placing this small form factor pluggable in a
+   device with packet functions can reduce network cost, power
+   consumption and footprint (when these benefits are not outweighed by
+   other engineering considerations).  Depending on the application,
+   distance between packet devices, quality of fibers and so on it might
+   be that there is no need for a ROADM network.  In case direct
+   connectivity between packet devices via plugs is possible the
+   corresponding pluggables are considered part of the packet network
+   itself.
 
    By incorporating coherent plugs into routers, network operators can
    achieve higher data rates, greater spectral efficiency, and improved
    tolerance to optical impairments.  This is especially valuable in
    scenarios where traditional electronic signaling might encounter
-   limitations.  Coherent plugs enable routers to leverage advanced
-   modulation schemes, digital signal processing, and error correction
-   techniques, enhancing their ability to handle complex optical
-   signals.
+   limitations.  Coherent plugs enable optical transceivers to leverage
+   advanced modulation schemes, digital signal processing, and error
+   correction techniques, enhancing their ability to handle complex
+   optical signals.
+
+   Coherent pluggable optics can be deployed on routers independently of
+   POI integration and many benefits can be achieved such as the
+   elimination of transponders.  However, the major benefits from
+   coherent pluggable optics in IP routers cannot be achieved without
+   POI integration which yields the high capacity point to point links
+   for Core and Data Center Interconnect use cases.
 
    One of the key advantages of using coherent plugs in routers is the
    potential to bridge the gap between long-haul and metro networks,
@@ -282,7 +302,7 @@ Table of Contents
    high-speed data centers, interconnection between data centers, and
    the overall growth of data-intensive applications.
 
-   as noted above, for some use-cases when the distance between packet
+   As noted above, for some use-cases when the distance between packet
    devices is short and optical power of pluggables are enough, the
    photonics devices might not be needed as shown in Figure 2(B).
 
@@ -534,13 +554,39 @@ Table of Contents
           ('valid for coherent pluggable')
 
    Once a pluggable module is inserted in the proper linecard port, the
-   host device must recognise the hardware component (ZR+ pluggable
-   module) and expose its attributes and capabilities to the controller.
-   For example, ZR+ modules can share the operational-mode that
-   summarize the most important pluggable characteristics (such as FEC
-   type, modulation format, baud rate, bit rate, etc.).  If the hardware
-   component has been successfully recognised, the host device is then
-   ready to create and expose the necessary logical arrangements.
+   host device must recognise the hardware component (e.g. 400G ZR+
+   pluggable module) and expose its attributes and capabilities to the
+   controller.  For example, ZR+ modules can share the operational-mode-
+   IDs supported that summarize the most important pluggable
+   characteristics (such as FEC type, modulation format, baud rate, bit
+   rate, etc.).  If the hardware component has been successfully
+   recognised, the host device is then ready to create and expose the
+   necessary logical arrangements.
+
+   Several coherent pluggables seem to come with a factory default set
+   of provisioning parameters (e.g. default channel number, default
+   launched power, default application code id, laser-on, admin-state
+   enabled etc.).  This factory default set of provisioning parameters
+   varies from manufacturer to manufacturer.  This can allow a
+   “plug&play” mode of operation over point-to-point connections (e.g.
+   single wavelength over dark fiber).  However, when the optical
+   connection between two pluggables is targeted to run over a DWDM Open
+   Line System (OLS) network, optical validation & planning step is
+   first required to determine the right target provisioning parameters
+   values to be set in the pluggables before interconnecting them to
+   their respective ROADM to avoid to impact any other existing optical
+   channels already up and running in the OLS network.  It is critical
+   for operators to have the same kind of commissioning phase
+   independently of the deployment scenario: point-to-point vs ROADM
+   meshed OLS network.  As a consequence, the use of factory default
+   provisioning parameters may be fine but they shall always be able to
+   be overwritten through router CLI or through Packet PNC to another
+   set of default provisioning parameters defined by the operator that
+   will change from pluggable to pluggable when deployed over an OLS
+   network.  A reset of the coherent pluggable (through router CLI or
+   through Packet PNC or due to a power off/on) shall always go back to
+   this operator’s default set of provisioning parameters where, for
+   example, the laser-state shall be ‘Off’ and admin-state ‘disabled’.
 
 5.1.1.2.  Inventory of Coherent DWDM pluggable ('valid for coherent
           pluggable').
@@ -548,37 +594,37 @@ Table of Contents
    The domain controller exposes to the MDSC hardware inventory
    information of the devices under its supervision.  For full router
    inventory (linecards, ports, etc.) see draft-ietf-ivy-network-
-   inventory-yang.  In addition, it has to include the coherent
-   pluggable transceiver capabilities.  These include, for instance,
-   operational-modes supported (ITU-T application codes, organizational
-   modes), min/max central-frequency range supported, min/max output
-   power supported, min/max received power supported etc.  In case of
-   discovery of any HW mismatch between coherent DWDM pluggable and
-   router linecard port capabilities the controller shall report HW
-   mismatch alarm to MDSC.  An example is a linecard multi-rate port vs
-   coherent DWDM pluggable with only one client/line rate (e.g.
-   1x400GE).
+   inventory-yang.  In addition, capability information shall include
+   the coherent pluggable transceiver capabilities.  These include, for
+   instance, operational-modes supported (ITU-T application codes,
+   organizational modes), min/max central-frequency range supported,
+   min/max output power supported, min/max received power supported etc.
+   In case of discovery of any HW mismatch between coherent DWDM
+   pluggable and router linecard port capabilities the controller shall
+   report HW mismatch alarm to MDSC.  An example is a linecard multi-
+   rate port vs coherent DWDM pluggable with only one client/line rate
+   (e.g. 1x400GE).
 
 5.1.1.3.  Coherent pluggable OTSi service discovery information ('valid
           for coherent pluggable').
 
    Once a router-to-router connection with coherent pluggables has been
    created over a Network Media Channel in the optical Line system, then
-   it is required to expose the OTSi service.  The relevant OTSi
-   information could be nominal-central-frequency, tx-output-power,
+   it is required by the O-PNC to expose the OTSi service.  The relevant
+   OTSi information could be nominal-central-frequency, tx-output-power,
    operational-mode-ID, operational-status, admin-status etc.
 
 5.1.1.4.  Discovery of layer relationships
 
    In case the operational mode has already been configured, the host
-   device and the controlller need to create the nececessary
+   device and the P-PNC controlller need to create the nececessary
    arrangements to navigate from the interface where the router traffic
-   is injected up the port connecting to the fiber.  That is, the layer
-   hierarchy from L0 to L3 needs to be completed and exposed.
+   is injected up the port connecting to the fiber.  That is, the
+   physical connectivity needs to be exposed.
 
 5.1.2.  End-to-end multi-layer event/fault management (valid for both)
 
-   The Target is this use case is to have a full end-to-end multi-layer
+   The Target in this use case is to have a full end-to-end multi-layer
    correlation of events at different layers and domains (e.g.
    operational-status changes reported at OTS/OMS/OCh/ODUk (optional),
    IP link level, LSP level, L3VPN/L2VPN level etc.) so that final root
@@ -638,8 +684,8 @@ Table of Contents
    to have a mean to check/discover that the right pluggable has been
    connected to the desired ROADM port.  This use case requires the
    ability to expose to the MDSC the power levels at coherent DWDM
-   pluggable side and at ROADM port side to perform the right
-   correlation and validation.
+   pluggable side and at ROADM port side and vice versa to perform the
+   right correlation and validation.
 
 5.3.  End-to-end L3VPN/L2VPN service multi-layer fulfilment with SLA
       constraints (TE constraints) (valid for both)
@@ -664,38 +710,38 @@ Table of Contents
    (performance and optical impairments for a specific operational-mode-
    ID), the optical planning and validation process is performed and the
    following parameters are communicated by optical team to IP team:
-   nominal-central-frequency, tx-output-power, operational-mode-ID so
-   that the coherent pluggables at both ends in the routers can be
-   correctly configured in a manual way (e.g. through P-PNC or any other
-   mean).  As prerequisite before the coherent pluggable configuration,
-   the optical team has properly configured the Media Channel in the
-   line system DWDM network through the O-PNC. ### Semi-manual Day 1
-   configuration (‘valid for coherent pluggable’) Same optical planning
-   and validation is performed first by optical team and then parameters
-   are provided to MDSC operations engineer so that they can be set-up
-   at Hierarchical SDN controller level and provisioned by P-PNC in the
-   corresponding router’s pluggables. ### Semi-Automated Day 1
-   configuration with Path Computation API request from MDSC towards PNC
-   (‘valid for coherent pluggable’) In this use case the start of the
-   pluggable to pluggable connectivity is triggered by the connectivity
-   needs of a packet service (slice, vpn, etc...).  In the context of
-   ACTC, the process would start with MDSC receiving the service request
-   (e.g.  L3VPN) (or service provisioning from a GUI) but a new optical
-   connectivity is needed between two ZR/ZR+ pluggables which are
-   already physically connected (patch cord) to ROADM nodes ports.  MDSC
-   sends a path computation request to the O-PNC asking for a specific
-   MC/NMC between source Mux/Dmux and destination Mux/Dmux for a target
-   bitrate (e.g. 400G) and O-PNC in coordination with planning tool
-   calculates the optical path (after successful PCE computation) for
-   this given bitrate (e.g. 400G) with a specific operational-mode-ID
-   supported by these coherent pluggables.  It validates the optical
+   nominal-central-frequency, tx-output-power, operational-mode-ID and
+   applicable threshold settings so that the coherent pluggables at both
+   ends in the routers can be correctly configured in a manual way (e.g.
+   through P-PNC or any other mean).  As prerequisite before the
+   coherent pluggable configuration, the optical team has properly
+   configured the Media Channel in the line system DWDM network through
+   the O-PNC. ### Semi-manual Day 1 configuration (‘valid for coherent
+   pluggable’) Same optical planning and validation is performed first
+   by optical team and then parameters are provided to MDSC operations
+   engineer so that they can be set-up at Hierarchical SDN controller
+   level and provisioned by P-PNC in the corresponding router’s
+   pluggables. ### Semi-Automated Day 1 configuration with Path
+   Computation API request from MDSC towards PNC (‘valid for coherent
+   pluggable’) In this use case the start of the pluggable to pluggable
+   connectivity is triggered by the connectivity needs of a packet
+   service (slice, vpn, etc...).  In the context of ACTC, the process
+   would start with MDSC receiving the service request (e.g.  L3VPN) (or
+   service provisioning from a GUI) and the MDSC determines that new
+   optical connectivity is needed between two ZR/ZR+ pluggables which
+   are already physically connected (patch cord) to ROADM nodes ports.
+   MDSC sends a path computation request to the O-PNC asking for a
+   specific MC/NMC between source Mux/Dmux and destination Mux/Dmux for
+   a target bitrate (e.g. 400G) and O-PNC in coordination with planning
+   tool calculates the optical path (after successful PCE computation)
+   for this given bitrate (e.g. 400G) with a specific operational-mode-
+   ID supported by these coherent pluggables.  It validates the optical
    path defining the central-frequency, output-power, operational-mode-
    ID to be configured in the coherent pluggables.  O-PNC updates the
    MDSC of successful optical path creation exposing this new optical
    path to the MDSC along with the nominal-central-frequency, the
    target-output-power, the operational-mode-ID for which this MC/NMC
-   was created, etc.  The optical path is provisioned but operational-
-   status is disabled.  The MDSC requests the relevant PNC to configure
+   was created, etc.  The MDSC requests the relevant PNC to configure
    both source and target pluggables with the calculated parameters.
    MDSC uses the coherent pluggable CRUD data model to be used on MPI to
    configure the corresponding ZR+ connection (OTSi service) in the
@@ -717,9 +763,9 @@ Table of Contents
    of Operation) in most operators, before an optical path is setup
    either between two native transponders or between two coherent
    pluggables in routers, a detailed optical planning and validation is
-   always required.  So, the automation of this use case is considered
-   more for future mode of operations (FMO) and has not the same
-   priority as the previous two use cases.
+   typically required.  So, the automation of this use case is
+   considered more for future mode of operations (FMO) and has not the
+   same priority as the previous two use cases.
 
 5.6.  End-to-end L3VPN/L2VPN service multi-layer with SLA constraints
       (TE constraints) with optical restoration support (valid for both
@@ -764,11 +810,12 @@ Table of Contents
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/rfc/rfc2119>.
 
-8.2.  Informative References
+   [RFC8453]  Ceccarelli, D., Ed. and Y. Lee, Ed., "Framework for
+              Abstraction and Control of TE Networks (ACTN)", RFC 8453,
+              DOI 10.17487/RFC8453, August 2018,
+              <https://www.rfc-editor.org/rfc/rfc8453>.
 
-   [actn-rfc] "Framework for Abstraction and Control of TE Networks
-              ACTN", 19 December 2018,
-              <https://datatracker.ietf.org/doc/rfc8453/>.
+8.2.  Informative References
 
    [MANTRA-whitepaper-IPoWDM-convergent-SDN-architecture]
               "IPoWDM convergent SDN architecture - Motivation,
@@ -782,15 +829,16 @@ Table of Contents
               Ceccarelli, "Applicability of Abstraction and Control of
               Traffic Engineered Networks (ACTN) to Packet Optical
               Integration (POI)", Work in Progress, Internet-Draft,
-              draft-ietf-teas-actn-poi-applicability-11, 22 February
-              2024, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              teas-actn-poi-applicability-11>.
+              draft-ietf-teas-actn-poi-applicability-12, 5 July 2024,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-teas-
+              actn-poi-applicability-12>.
 
 Appendix A.  Acknowledgments
 
    This document has been made with consensus and contributions coming
    from multiple drafts with different visions.  We would like to thank
-   all the participants in the IETF meeting discussions.
+   all the participants in the IETF meeting discussions.  Part of the
+   work has been carried out in the EU Season project (101096120).
 
 Contributors
 
@@ -838,6 +886,18 @@ Contributors
    TEL AVIV-YAFO, TA
    Israel
    Email: ogerstel@cisco.com
+
+
+   Stefan Melin
+   Telia Company
+   Stockholm/Solna
+   Sweden
+   Email: stefan.melin@teliacompany.com
+
+
+   Deborah Brungard
+   ATT
+   Email: db3546@att.com
 
 
 Authors' Addresses
