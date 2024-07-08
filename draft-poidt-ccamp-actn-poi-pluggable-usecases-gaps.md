@@ -108,7 +108,12 @@ contributor:
     city: Stockholm/Solna
     country: Sweden
     email: stefan.melin@teliacompany.com
-    
+
+  -
+    name: Deborah Brungard
+    org: ATT
+    email: db3546@att.com
+
 
 normative:
 
@@ -158,7 +163,7 @@ Optical transmission/switching is analogue and requires complex and holistic ana
 
 The combination of these above trends along with the desire to select best in breed components has led to the need for a standard way to control Coherent Modules between coherent pluggables and host device. Coherent Modules are more complex than non-coherent modules and led to extensions of Coherent CMIS {{OIF-CMIS}}. Standardization of CMIS is intended such that a plug from vendor X can be installed in vendor Y's device.
 
-An architecture analysis has been carried out by the MANTRA sub-group in the OOPT / TIP group (Open Optical & Packet Transport / Telecom Infra Project) {{MANTRA-whitepaper-IPoWDM-convergent-SDN-architecture}}.
+The applicability of Abstraction and Control of TE Networks (ACTN) architecture to Packet Optical Integration (POI) in the context of IP/MPLS and optical internetworking has been analyzed in {{?I-D.draft-ietf-teas-actn-poi-applicability}}. This document further extends to applicability of ACTN with the integration of coherent pluggables in IP/MPLS devices. An architecture analysis has been carried out by the MANTRA sub-group in the OOPT / TIP group (Open Optical & Packet Transport / Telecom Infra Project) {{MANTRA-whitepaper-IPoWDM-convergent-SDN-architecture}}.
 
 This document provides guidellines for control and management of packet over optical converged networks and it is divided into following sections:
 
@@ -214,9 +219,11 @@ The second approach is to take advantage of the small implementation footprint o
 
 By incorporating coherent plugs into routers, network operators can achieve higher data rates, greater spectral efficiency, and improved tolerance to optical impairments. This is especially valuable in scenarios where traditional electronic signaling might encounter limitations. Coherent plugs enable optical transceivers to leverage advanced modulation schemes, digital signal processing, and error correction techniques, enhancing their ability to handle complex optical signals.
 
+Coherent pluggable optics can be deployed on routers independently of POI integration  and many benefits can be achieved such as the elimination of transponders.  However, the major benefits from coherent pluggable optics in IP routers cannot be achieved without POI integration which yields the high capacity point to point links for Core and Data Center Interconnect use cases. 
+
 One of the key advantages of using coherent plugs in routers is the potential to bridge the gap between long-haul and metro networks, providing a seamless and efficient transition of data across various network segments. This technology can contribute to the evolution of high-speed data centers, interconnection between data centers, and the overall growth of data-intensive applications.
 
-as noted above, for some use-cases when the distance between packet devices is short and optical power of pluggables are enough, the photonics devices might not be needed as shown in {{figure-with-plug}}(B).
+As noted above, for some use-cases when the distance between packet devices is short and optical power of pluggables are enough, the photonics devices might not be needed as shown in {{figure-with-plug}}(B).
 
 ~~~
       |-----------|                               |-----------|
@@ -496,6 +503,6 @@ This document has no IANA actions.
 
 # Acknowledgments
 
-This document has been made with consensus and contributions coming from multiple drafts with different visions. We would like to thank all the participants in the IETF meeting discussions.
+This document has been made with consensus and contributions coming from multiple drafts with different visions. We would like to thank all the participants in the IETF meeting discussions. Part of the work has been carried out in the EU Season project (101096120). 
 
 {:numbered="false"}
