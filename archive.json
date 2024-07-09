@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-07T00:40:26.802914+00:00",
+  "timestamp": "2024-07-09T00:36:56.794738+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -154,7 +154,7 @@
         },
         {
           "author": "ggrammel",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "body": "OIF-400ZR-010_reduced2.pdf defines for 400ZR, DWDM amplified - Application Code (0x01) a default Channel frequency 193.7THz which suggests it comes pre-configured out of the factory. If such pre-configuration is implemented, it should be learned during discovery phase.",
           "createdAt": "2024-04-02T15:53:16Z",
           "updatedAt": "2024-04-02T15:53:16Z"
@@ -347,6 +347,22 @@
       "body": "What is required to be covered by the inventory?\r\n\r\nDo we need a \"capability\" database?\r\n\r\nProposal to differentiate betweeen inventory and capability database.",
       "createdAt": "2024-07-02T15:54:22Z",
       "updatedAt": "2024-07-02T15:54:22Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 21,
+      "id": "I_kwDOLDCSO86OzAej",
+      "title": "discussion points from Gert",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/21",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "I keep here for tracking the discussion points\r\n\r\n- packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset.\r\n- Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards.\r\n- Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC.\r\n- Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers.\r\n- Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
+      "createdAt": "2024-07-08T14:01:55Z",
+      "updatedAt": "2024-07-08T14:01:55Z",
       "closedAt": null,
       "comments": []
     }
@@ -861,26 +877,84 @@
       "id": "PR_kwDOLDCSO850UXsm",
       "title": "Text improvements and dIscussion points",
       "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/20",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ggrammel",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "change proposals for detailed discussion:\r\n1) packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset. \r\n2) Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards. \r\n3) Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC. \r\n4) Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers. \r\n5) Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
       "createdAt": "2024-07-03T12:12:12Z",
-      "updatedAt": "2024-07-03T12:12:13Z",
+      "updatedAt": "2024-07-08T14:00:01Z",
       "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
       "baseRefName": "main",
       "baseRefOid": "4b08b58423cf5b4d3fe726f516ea689bd8b4a0a5",
       "headRepository": "ggrammel/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
       "headRefName": "main",
       "headRefOid": "a3bb98de3827129d87ec3b098ee39eb00ba8c66d",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-07-08T14:00:01Z",
+      "mergedAt": "2024-07-08T14:00:01Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "22d0d1990f45f7231100d64078f9d6c584d49d68"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86A8yxx",
+          "commit": {
+            "abbreviatedOid": "a3bb98d"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-08T13:59:54Z",
+          "updatedAt": "2024-07-08T13:59:54Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOLDCSO850tWjW",
+      "title": "preparation for IETF 120",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/22",
+      "state": "MERGED",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-08T14:59:51Z",
+      "updatedAt": "2024-07-08T20:53:51Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "22d0d1990f45f7231100d64078f9d6c584d49d68",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "version-for-ietf",
+      "headRefOid": "6cd36bc3582c63cf173726a7890925735a641dba",
+      "closedAt": "2024-07-08T20:53:42Z",
+      "mergedAt": "2024-07-08T20:53:42Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "6e718b5fb49a6121fead00a05a3d8a29edf51fd4"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86A_dsG",
+          "commit": {
+            "abbreviatedOid": "6cd36bc"
+          },
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-08T18:53:43Z",
+          "updatedAt": "2024-07-08T18:53:43Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
