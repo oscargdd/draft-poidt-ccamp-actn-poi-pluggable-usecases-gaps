@@ -1,0 +1,960 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-07-23T00:37:52.008114+00:00",
+  "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOLDCSO8589hJ-",
+      "title": "In the network scenarios , add ethernet service?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/1",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-23T16:37:26Z",
+      "updatedAt": "2024-01-23T16:37:26Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOLDCSO8589n1W",
+      "title": "Do we need restoration at optical mesh scenario?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/2",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-23T16:50:24Z",
+      "updatedAt": "2024-01-23T16:50:24Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOLDCSO8589qB_",
+      "title": "Optical protection scenario ?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/3",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-23T16:54:09Z",
+      "updatedAt": "2024-01-23T16:54:09Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOLDCSO859wqrr",
+      "title": "From Figure-topo3 to Figure-topo5",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/5",
+      "state": "OPEN",
+      "author": "mlopezm1",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Is there any reason to skip Figure-topo4 in the document?",
+      "createdAt": "2024-01-31T11:42:14Z",
+      "updatedAt": "2024-01-31T11:42:15Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOLDCSO86BQWt8",
+      "title": "Check all contributors for next version",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/7",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "We have submitted last-minute in this version, so some contributors like Manolo and Jose Angel were not included. I'd like to track here the contributors to add.",
+      "createdAt": "2024-03-05T07:58:24Z",
+      "updatedAt": "2024-03-05T07:58:24Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "I_kwDOLDCSO86EXzrr",
+      "title": "Discussion on pluggable discovery",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/9",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "- Can the pluggable have \"default values\"? (e.g. application code, frequency...)",
+      "createdAt": "2024-04-02T15:32:35Z",
+      "updatedAt": "2024-04-23T12:33:55Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Should we add a sentence also meaning that the plugable must start in shutdown mode?",
+          "createdAt": "2024-04-02T15:34:04Z",
+          "updatedAt": "2024-04-02T15:34:04Z"
+        },
+        {
+          "author": "ggrammel",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "OIF-400ZR-010_reduced2.pdf defines for 400ZR, DWDM amplified - Application Code (0x01) a default Channel frequency 193.7THz which suggests it comes pre-configured out of the factory. If such pre-configuration is implemented, it should be learned during discovery phase.",
+          "createdAt": "2024-04-02T15:53:16Z",
+          "updatedAt": "2024-04-02T15:53:16Z"
+        },
+        {
+          "author": "prmanna",
+          "authorAssociation": "NONE",
+          "body": "It should be plug-&-play, no factory default. \r\nThe play will come into picture with (1) pre-config from NE or (2) config after plug. \r\nThe replacement of pluggable falls under (1).",
+          "createdAt": "2024-04-04T08:09:41Z",
+          "updatedAt": "2024-04-04T08:09:41Z"
+        },
+        {
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "body": "> The play will come into picture with (1) pre-config from NE or (2) config after plug. The replacement of pluggable falls under (1).\r\n\r\nI agree with both scenarios. It may be obvious, but they rely on the fact that shelf configuration has precedence on any factory default. However, those don't justify that we preclude default values: there are uses cases where the expectation is to only have to enable the interfaces (e.g., single wavelength on dark fiber).",
+          "createdAt": "2024-04-05T12:13:08Z",
+          "updatedAt": "2024-04-05T13:02:57Z"
+        },
+        {
+          "author": "ggalimba56",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I'd add to Julien Comments: the default configuration will be applied in absence of port configuration. I.e. the Pluggable slot has never hosted a pluggable or a service has never configured to that port.",
+          "createdAt": "2024-04-08T13:01:57Z",
+          "updatedAt": "2024-04-08T13:01:57Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "[Discovery_workflows.pptx](https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/files/14998752/Discovery_workflows.pptx)\r\n\r\nThese are the scenarios discusssed",
+          "createdAt": "2024-04-16T14:54:43Z",
+          "updatedAt": "2024-04-16T14:54:43Z"
+        },
+        {
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Here is our proposal with Manolo as agreed in our last call to be added in \"Coherent DWDM pluggable insertion in the router linecard port ('valid for coherent pluggable')\" regarding the default parameters topic in pluggables. When I can I will do the Pull Request. Comments are welcome.\r\n\r\n\"Several coherent pluggables seem to come with a factory default set of parameters (e.g. default channel number, default launched power, default application code id, laser-on, admin-state enabled etc.). This factory default set of parameters varies from manufacturer to manufacturer. This can allow a \u201cplug&play\u201d mode of operation over point-to-point connections (e.g. single wavelength over dark fiber) of course limited to bookended solutions from the same Vendor and same factory default parameters. However, when the optical connection between two pluggables is targeted to run over a DWDM  Open Line System (OLS) network, optical validation & planning step is first required to determine the right target parameters values to be set in the pluggables before interconnecting them to their respective ROADM to avoid to impact any other existing optical channels already up and running in the OLS network.\r\nIt is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of default parameters may be fine but the default set of factory parameters shall be able to be overwritten through router CLI or through Packet PNC to another set of operational default parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC) shall always go back to this operator\u2019s default set of operational parameters where, for example, the laser-state shall be \u2018Off\u2019 and admin-state \u2018disabled\u2019.\"\r\n",
+          "createdAt": "2024-04-22T10:43:52Z",
+          "updatedAt": "2024-04-22T10:43:52Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Thanks for the proposal. Comments below:\r\n\r\n1) The \u00b7pre-configuration can come from factory, or operator-driven. E.g. you want to pre-tune your pluggables, etc... It might be useful in some scenarios.  \r\n\r\nText suggestion:\r\n\r\n\"Coherent pluggables can come with a default set of parameters, either by factory settings or pre-configured by the operator. Pre-configured parameters might include default channel number, default launched power, default application code id, laser-on, admin-state enabled etc..\"\r\n\r\n2) The fact that it varies is because there is no \"enforcement\" by any standard right? I also understood that CMIS defines (or maybe recommends...) some defaul parameters. \r\n\r\nText suggestoin:\r\n\r\n\"This factory default set of parameters varies from manufacturer to manufacturer, as the standard does not mandate a given set of values, even though some parameters have default values.\"\r\n\r\n3) I would add that the recommendation is that, independently wethere the pluggable comes with a valid pre-configuration or not, it should not inmideatly start transmitting.\r\n\r\nText suggestion:\r\n\r\n\"In order to avoid unintentionally harming other channels, it is recommended that after a pluggable is connected to the router, by default, the laser is off, and the operator (or the controller) should explictly enable the transceiver.\"\r\n\r\n4) \"overwritten through router CLI or through Packet PNC\". I think we need to hightlight the the router can have also been preconfigured, and it MUST take prececence over the pluggable. If you modify later, it is a normal case...  Also, I would be agnostic of who configured that (maybe saying management or control is fine) I would suggest:\r\n\r\n\"shall be overwritten throught the configuration stored in the router, which might have been provided by management or controller means. \"\r\n\r\n\r\nWhen you make the PR, I make the suggestions there directly, we can continue the discussion here\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+          "createdAt": "2024-04-23T12:33:54Z",
+          "updatedAt": "2024-04-23T12:33:54Z"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "I_kwDOLDCSO86F5JGN",
+      "title": "Add text to explain the pre-configuration in the pluggable for the discovery case",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/10",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "oscargdd",
+        "jbouqui153"
+      ],
+      "labels": [],
+      "body": "Add text to explain the pre-configuration in the pluggable for the discovery case",
+      "createdAt": "2024-04-16T15:32:20Z",
+      "updatedAt": "2024-04-16T15:32:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 12,
+      "id": "I_kwDOLDCSO86HamH2",
+      "title": "Unique identification of pluggable",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/12",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "The requirement is to be able to know which type of pluggable  is availble, so it't characterization can be obtained by the controller. This does not preclude that the controller also discovers capabilities real time from the pluggable and verifies them vs the expectations from the pre-characterization. \r\n\r\nIt is required to standardize which parameters to use in this identification (from ivy and/ openconfig).\r\n ",
+      "createdAt": "2024-04-30T15:59:54Z",
+      "updatedAt": "2024-04-30T15:59:54Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 13,
+      "id": "I_kwDOLDCSO86Jl_qC",
+      "title": "Figure 3 update",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/13",
+      "state": "OPEN",
+      "author": "sergiobelotti",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "For alignment with figure 1 and 2 , the dotted line between packet device 1 with pluggable and Photonics should be named \"WDM Optics\" (as in figure 2A) and the dotted line between packet device 3 and xPonder should be named \"Grey Optics\" (as in figure 1)\r\n",
+      "createdAt": "2024-05-21T14:24:59Z",
+      "updatedAt": "2024-05-21T14:24:59Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 14,
+      "id": "I_kwDOLDCSO86KXaN7",
+      "title": "breakout use case?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/14",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Add breakout use case with the operator's requirements",
+      "createdAt": "2024-05-28T15:39:04Z",
+      "updatedAt": "2024-05-28T15:39:04Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 15,
+      "id": "I_kwDOLDCSO86NcL1h",
+      "title": "Add use case on maintenance or in-service upgrades at the optical layer",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/15",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-25T15:22:47Z",
+      "updatedAt": "2024-06-25T15:22:47Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 16,
+      "id": "I_kwDOLDCSO86NcYI5",
+      "title": "review from deborah",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/16",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "While day 1 (startup) is described, don\u2019t see anything on maintenance or in-service upgrades at the optical layer. A couple of notes (covered in some of the multi-layer RFCs done previously):\r\n\r\n-\tAvoid disruption in the network \u2013 minimal impacts on both optical and packet. Do not want to trigger a network-wide router software update when performing operations on an optical module.\r\n-\tRecommend module software \u2013 software upgrades/maintenance on the packet level or optical level are not disruptive on the other level.\r\n-\tNeed to manage properly, including security levels for the different entities.\r\n-\tI noted it is said \u201cno protection\u201d \u2013 maybe want to soften to say \u201cprotection/restoration is for further study\u201d?\r\n-\tMeasures to include  network wide multi-layer re-optimization strategy to prevent fragmentation and optimal use of capacity (e.g., RFC5557 provides guidance when using a PCE).\r\n-\tMeasures to protect against network destabilization\r\n-\tMeasures are needed to support graceful deletion at all layers\r\n-\tFault escalation strategy to coordinate across the layers\r\n-\tMechanisms for aggregating, summarizing, enabling and disabling of inter-layer notifications so as not to overwhelm the controller.\r\n\r\nA couple of wording nits:\r\n\r\n-\tSection 2 \u201cwhich results in non-optimal and inefficient networking\u201d/s/\u201dwhich may result in non-optimal and inefficient networking\u201d (marketing/opinion)\r\n-\tSection 2 \u201cPlacing coherent plugs..can reduce\u201d/s/\u201dPlacing coherent plugs..may reduce\u201d (marketing/opinion)\r\n-\tSection 5.6 \u201cto avoid proven protection races\u201d/s/\u201dto avoid possible protection races\u201d (proven? May happen if the multi-layers are not managed correctly, a vendor fails to implement proper detection/escalation).\r\n",
+      "createdAt": "2024-06-25T15:45:54Z",
+      "updatedAt": "2024-06-25T15:45:54Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 17,
+      "id": "I_kwDOLDCSO86OPq-q",
+      "title": "add security considerations section",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/17",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-02T14:49:28Z",
+      "updatedAt": "2024-07-02T14:49:28Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 18,
+      "id": "I_kwDOLDCSO86OPyws",
+      "title": "Inventory use case: Which relationships are required?",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/18",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "For the inventory use case, Which relationships are required from the components towards other elements (e.g. topology)? \r\n\r\n",
+      "createdAt": "2024-07-02T15:02:44Z",
+      "updatedAt": "2024-07-02T15:02:44Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 19,
+      "id": "I_kwDOLDCSO86OQOnc",
+      "title": "What is required to be covered by the inventory? E.g. All modes vs modes capabable by the hardware.",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/19",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "What is required to be covered by the inventory?\r\n\r\nDo we need a \"capability\" database?\r\n\r\nProposal to differentiate betweeen inventory and capability database.",
+      "createdAt": "2024-07-02T15:54:22Z",
+      "updatedAt": "2024-07-02T15:54:22Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 21,
+      "id": "I_kwDOLDCSO86OzAej",
+      "title": "discussion points from Gert",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/21",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "I keep here for tracking the discussion points\r\n\r\n- packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset.\r\n- Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards.\r\n- Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC.\r\n- Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers.\r\n- Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
+      "createdAt": "2024-07-08T14:01:55Z",
+      "updatedAt": "2024-07-08T14:01:55Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 4,
+      "id": "PR_kwDOLDCSO85lKlal",
+      "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/4",
+      "state": "MERGED",
+      "author": "jbouqui153",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Here is a first draft proposal from Manolo and myself for the use cases section 5 that we can discuss in our next Tuesday call.",
+      "createdAt": "2024-01-26T14:42:15Z",
+      "updatedAt": "2024-03-04T15:15:31Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "495efb376d9a898e654343eda989516a0734789a",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "jbouqui153-patch-1",
+      "headRefOid": "eede324d39c0b6cb8d32d1f315e78ff96768c254",
+      "closedAt": "2024-03-04T15:15:28Z",
+      "mergedAt": "2024-03-04T15:15:28Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "58683ba821a0f1ff2ac481ac02aee65e3a48cc98"
+      },
+      "comments": [
+        {
+          "author": "japdelarosa",
+          "authorAssociation": "NONE",
+          "body": "Within the ## 5. More to be added, it could be considered the use case specific for the Coherent pluggable optics:\r\n\r\n## 5. Coherent pluggable optics (focusing on the coherent pluggable)\r\no\t### a. Provisioning of the Coherent pluggable optics and related parameters (e.g. Client Interface Speed, Line Interface Speed, Frequency, FEC, Modulation, Transmitted Power, SFP Identifier or Reference Number, etc.). Different phases of the implementation shall require different actions for setting the parameters either automatically or by user-defined specifications manually. It included the Network Controllers and the MDSC interactions (e.g. P-PNC to Coherent Pluggable, P-PNC / MDSC, etc.).\r\no\t### b. Discovery / Visibility of the Coherent pluggable optics and related parameters. The above discovery includes inventory discovery by each controller and exposure to the MDSC of the required information for a complete view of the network.\r\no\t### c. Event/fault management of the Coherent pluggable optics and related parameters.\r\no\t### d. Performance management of the Coherent pluggable optics and related parameters.\r\no\t### e. Reconfiguration management of the Coherent pluggable optics following network changes, faults or  and related parameters\r\no\t### f. Correlation of coherent pluggable optics with related nodes and services items (e.g., Port/Interface, Board, Node, Services, etc.).\r\n",
+          "createdAt": "2024-02-05T20:09:57Z",
+          "updatedAt": "2024-02-05T20:09:57Z"
+        },
+        {
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Please find, as promised, an updated input from my side in word format, keeping the base use cases as they are in my Pull Request but adding now sub-use cases for use cases 1, 2, 3. You can add your comments/additional sub use cases directly in the word document by activating change control. Tomorrow we can agree with Oscar and all how to proceed further using github or for moment working on this word input. Thank you.\r\n[(2024.02.12) Jeff input for use cases in draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps v1.docx](https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/files/14240186/2024.02.12.Jeff.input.for.use.cases.in.draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.v1.docx)\r\n",
+          "createdAt": "2024-02-12T15:31:26Z",
+          "updatedAt": "2024-02-12T15:31:26Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO85uCUhS",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "I'd drop some words to say \"mentioned in [draft-poidt-ccamp-actn-poi-pluggable-02]\" so as to point to the I-D.",
+          "createdAt": "2024-01-26T16:35:21Z",
+          "updatedAt": "2024-01-26T16:37:01Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uCYWs",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "I'd replace \"ROADM filter port\" by \"ROADM port\" or \"ROADM add/drop port\" (to avoid assuming a particular type of ROADM).",
+          "createdAt": "2024-01-26T16:44:33Z",
+          "updatedAt": "2024-01-26T16:44:33Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uCaR7",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "The 1st set of use cases seems to be missing a consistent end-to-end provisioning item, which is not trivial when moving transponders into routers. I'll try to propose some text next week.",
+          "createdAt": "2024-01-26T16:49:16Z",
+          "updatedAt": "2024-01-26T16:49:42Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uKb_A",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "ggalimba56",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-29T09:43:57Z",
+          "updatedAt": "2024-01-29T09:43:57Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "Here You probably meant draft-poidt-ccamp-actn-poi-pluggable-02 instead of draft-ietf-teas-actn-poi-pluggable-02",
+              "createdAt": "2024-01-29T09:43:57Z",
+              "updatedAt": "2024-01-29T09:43:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uKjsg",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "ggalimba56",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-29T09:54:35Z",
+          "updatedAt": "2024-01-29T09:54:35Z",
+          "comments": [
+            {
+              "originalPosition": 31,
+              "body": "I think we should clarify the Optical Restoration from Optical Protection. I agree the Optical protection is not needed as the packet layer is efficient on implementing the traffic protection while I would consider the Optical Restoration useful to recover the optical failure and keep the Router connectivity safe after a fiber cut.",
+              "createdAt": "2024-01-29T09:54:35Z",
+              "updatedAt": "2024-01-29T09:54:35Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uX-Fe",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-30T16:27:20Z",
+          "updatedAt": "2024-01-30T16:27:20Z",
+          "comments": [
+            {
+              "originalPosition": 31,
+              "body": "We could add two sub-use cases, one were the central frequency is maintained (the path in OLS is restored , but keeping the frequency) (Question  is if it is worth the complexity vs the number of solvable situations).  A second sub-use is where the central frequency is allowed to change (covering more use cases). ",
+              "createdAt": "2024-01-30T16:27:20Z",
+              "updatedAt": "2024-01-30T16:27:20Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85uYE4m",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-30T16:37:20Z",
+          "updatedAt": "2024-01-30T16:37:21Z",
+          "comments": [
+            {
+              "originalPosition": 30,
+              "body": "Within the Automation/Fulfillment section, we can add \r\n1) Provisioning of optical connection from plug-to-plug\r\n2) Provisioning of IP link with optical connection from plug-to-plug\r\n.....",
+              "createdAt": "2024-01-30T16:37:20Z",
+              "updatedAt": "2024-01-30T16:37:21Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85vMnbm",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "hayabusagsm",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-06T15:36:23Z",
+          "updatedAt": "2024-02-06T15:36:24Z",
+          "comments": [
+            {
+              "originalPosition": 16,
+              "body": "My comment from last week just adding a note here.  Related to SR-TE  and that the future direction for all providers is to move towards SR-TE, however the there are today technical gaps with SR related to bandwidth management due to SR being stateless that exists in RSVP TE that is statefull, where PCALC provides the auto bandwidth capabilities to provide prioritization of tunnels with DS-TE or setup/hold priorities and other statefull mechanisms for bandwidth management.   I think it maybe a good idea to mention CS-SR (circuit style SR) draft below and make a normative reference the concept draft below as that is exactly what CS-SR is about which is using SR for POI solution.  I believe vendors are working on making enhancements in near future to PCE making a v2 PCE that has a bandwidth management capabilities so that RSVP-TE statefull concepts and features can be possible in SR's stateless framework using SR-PM and path tracing.  \r\nCS-SR draft \r\nhttps://datatracker.ietf.org/doc/draft-schmutzer-spring-cs-sr-policy/ \r\n\r\nCisco has a marketing buzz word they use \"RON\" routed optical networking which I think does make sense intuitively with RON that now a router with low profile pluggable optics can transform into a DWDM switch and provide POI integration at lower cost & sustainability.    I think RON terminology I think could be mentioned in the draft as being synonymous to POI. ",
+              "createdAt": "2024-02-06T15:36:23Z",
+              "updatedAt": "2024-02-06T15:36:24Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85vMzEC",
+          "commit": {
+            "abbreviatedOid": "eede324"
+          },
+          "author": "hayabusagsm",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-06T15:54:59Z",
+          "updatedAt": "2024-02-06T15:54:59Z",
+          "comments": [
+            {
+              "originalPosition": 31,
+              "body": "I agree I with RSVP-TE  existing deployments and future SR-TE that the IP layer can provide sufficient protection for working & protect path, and optical layer to provide the restoration of fiber cut, restoring IP layer router connectivity.  I agree we could add sub use cases.  ",
+              "createdAt": "2024-02-06T15:54:59Z",
+              "updatedAt": "2024-02-06T15:56:26Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOLDCSO85onStx",
+      "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/6",
+      "state": "MERGED",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-03-04T16:46:40Z",
+      "updatedAt": "2024-03-04T23:51:08Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "58683ba821a0f1ff2ac481ac02aee65e3a48cc98",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "prepare-first-draft",
+      "headRefOid": "9119e3af5323d8d3fe3db5617961ee165a3e96f1",
+      "closedAt": "2024-03-04T23:51:05Z",
+      "mergedAt": "2024-03-04T23:51:05Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "a5aa0c4db8a44e513bdf1a10a916b4f2f20ecb86"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO85yJE8v",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "Only minor editorial changes",
+          "createdAt": "2024-03-04T18:12:15Z",
+          "updatedAt": "2024-03-04T18:38:15Z",
+          "comments": [
+            {
+              "originalPosition": 60,
+              "body": "DWDM instead of WDM",
+              "createdAt": "2024-03-04T18:12:15Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 71,
+              "body": "(DWDM pluggable module) instead of (ZR+ pluggable module)",
+              "createdAt": "2024-03-04T18:16:02Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 70,
+              "body": "add \"('valid for coherent pluggable')\" at the end of the title",
+              "createdAt": "2024-03-04T18:16:58Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 87,
+              "body": "The target \"for\" this use case instead of \"is\" this use case",
+              "createdAt": "2024-03-04T18:21:06Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 109,
+              "body": "Add/Drop \"filter\" to be changed to Add/Drop \"port\" of the ROADM",
+              "createdAt": "2024-03-04T18:24:49Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 110,
+              "body": "Here we miss the title which should be the one indicated in line 463 \"##3. End-to-end L3VPN/L2VPN service multi-layer provisioning with SLA constraints (TE constraints) (valid for both) as well as the description in line 464.\r\nThen lines 453 to 460 are sub use cases of this provisioning use case",
+              "createdAt": "2024-03-04T18:33:21Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 123,
+              "body": "See my comment on line 452. Should be 3 and not 4",
+              "createdAt": "2024-03-04T18:33:45Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            },
+            {
+              "originalPosition": 127,
+              "body": "Should be 4. and not 5.",
+              "createdAt": "2024-03-04T18:37:08Z",
+              "updatedAt": "2024-03-04T18:38:15Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yJ8w0",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "ggalimba56",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-03-04T19:47:31Z",
+          "updatedAt": "2024-03-04T19:47:31Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yLTfd",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T23:32:12Z",
+          "updatedAt": "2024-03-04T23:32:12Z",
+          "comments": [
+            {
+              "originalPosition": 60,
+              "body": "Done!",
+              "createdAt": "2024-03-04T23:32:12Z",
+              "updatedAt": "2024-03-04T23:32:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yLUCz",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T23:33:50Z",
+          "updatedAt": "2024-03-04T23:33:50Z",
+          "comments": [
+            {
+              "originalPosition": 70,
+              "body": "done!",
+              "createdAt": "2024-03-04T23:33:50Z",
+              "updatedAt": "2024-03-04T23:33:50Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yLUMu",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T23:34:33Z",
+          "updatedAt": "2024-03-04T23:34:33Z",
+          "comments": [
+            {
+              "originalPosition": 109,
+              "body": "done!",
+              "createdAt": "2024-03-04T23:34:33Z",
+              "updatedAt": "2024-03-04T23:34:33Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yLUSE",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T23:34:56Z",
+          "updatedAt": "2024-03-04T23:34:56Z",
+          "comments": [
+            {
+              "originalPosition": 123,
+              "body": "I removed numbers and let the autonumbering to do the magic",
+              "createdAt": "2024-03-04T23:34:56Z",
+              "updatedAt": "2024-03-04T23:34:56Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLDCSO85yLUWt",
+          "commit": {
+            "abbreviatedOid": "af04d52"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T23:35:13Z",
+          "updatedAt": "2024-03-04T23:35:14Z",
+          "comments": [
+            {
+              "originalPosition": 127,
+              "body": "Same... removed numbers.",
+              "createdAt": "2024-03-04T23:35:13Z",
+              "updatedAt": "2024-03-04T23:35:14Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOLDCSO85otA_N",
+      "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/8",
+      "state": "MERGED",
+      "author": "Sme791",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Just added one line to terminology, MDSC, my name as contributor.\r\n\r\nOn the sections about performance management, is this referring to 15 min/24 hour PM or arbitrary time intervals that can be implemented by streaming telemetry? Any reason to clarify this?",
+      "createdAt": "2024-03-05T11:30:45Z",
+      "updatedAt": "2024-04-09T14:47:23Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "a5aa0c4db8a44e513bdf1a10a916b4f2f20ecb86",
+      "headRepository": "Sme791/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "patch-1",
+      "headRefOid": "a1ff94b5692cd646989a140282c619c43e38a806",
+      "closedAt": "2024-04-09T14:47:23Z",
+      "mergedAt": "2024-04-09T14:47:23Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "29f6500125e8335918306f0ddbe1e04e94005c31"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO85yQpjc",
+          "commit": {
+            "abbreviatedOid": "a1ff94b"
+          },
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-03-05T13:39:11Z",
+          "updatedAt": "2024-03-05T13:39:11Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOLDCSO85tnu28",
+      "title": "Update draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps.md",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/11",
+      "state": "MERGED",
+      "author": "jbouqui153",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "VF proposal as described issue #9 with some minor rewording",
+      "createdAt": "2024-04-24T15:50:17Z",
+      "updatedAt": "2024-07-05T08:34:59Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "29f6500125e8335918306f0ddbe1e04e94005c31",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "default_parameters",
+      "headRefOid": "7c5b30770b5601bbe591f2bf9c11a570e837d325",
+      "closedAt": "2024-07-02T14:10:08Z",
+      "mergedAt": "2024-07-02T14:10:08Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "4b08b58423cf5b4d3fe726f516ea689bd8b4a0a5"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86AwfUK",
+          "commit": {
+            "abbreviatedOid": "7c5b307"
+          },
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T08:10:15Z",
+          "updatedAt": "2024-07-05T08:34:59Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "channel number -> channel identifier\r\nlimited to bookended solutions from -> limited to transceiver pairs from ",
+              "createdAt": "2024-07-05T08:10:15Z",
+              "updatedAt": "2024-07-05T08:34:59Z"
+            },
+            {
+              "originalPosition": 8,
+              "body": "I'm not sure I get the idea behind \"the same kind of commissioning phase\". The following sentences allow different approaches (which is fine), provided the operator remains in control in all cases: that's what we should promote, but the initial wording is confusing.\r\nI would also reserve the term \"default\" to refer to the factory values and make it clearer operators want to control the running parameters, even on startup, whatever the factory values.\r\nNEW: \"the use of factory default provisioning parameters may be fine but the operator must always be able to override them through router CLI or Packet PNC to another set of startup provisioning parameters that will change from pluggable to pluggable when deployed over an OLS network. A reset of the pluggable (through router CLI/Packet PNC, or due to a power off/on) shall always go back to this operator-custom set of provisioning parameters (e.g., laser-state to \u2018Off\u2019 and admin-state to \u2018disabled\u2019).\"",
+              "createdAt": "2024-07-05T08:19:43Z",
+              "updatedAt": "2024-07-05T08:34:59Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "PR_kwDOLDCSO850UXsm",
+      "title": "Text improvements and dIscussion points",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/20",
+      "state": "MERGED",
+      "author": "ggrammel",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "change proposals for detailed discussion:\r\n1) packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset. \r\n2) Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards. \r\n3) Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC. \r\n4) Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers. \r\n5) Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
+      "createdAt": "2024-07-03T12:12:12Z",
+      "updatedAt": "2024-07-08T14:00:01Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "4b08b58423cf5b4d3fe726f516ea689bd8b4a0a5",
+      "headRepository": "ggrammel/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "main",
+      "headRefOid": "a3bb98de3827129d87ec3b098ee39eb00ba8c66d",
+      "closedAt": "2024-07-08T14:00:01Z",
+      "mergedAt": "2024-07-08T14:00:01Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "22d0d1990f45f7231100d64078f9d6c584d49d68"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86A8yxx",
+          "commit": {
+            "abbreviatedOid": "a3bb98d"
+          },
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-08T13:59:54Z",
+          "updatedAt": "2024-07-08T13:59:54Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOLDCSO850tWjW",
+      "title": "preparation for IETF 120",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/22",
+      "state": "MERGED",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-08T14:59:51Z",
+      "updatedAt": "2024-07-08T20:53:51Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "22d0d1990f45f7231100d64078f9d6c584d49d68",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "version-for-ietf",
+      "headRefOid": "6cd36bc3582c63cf173726a7890925735a641dba",
+      "closedAt": "2024-07-08T20:53:42Z",
+      "mergedAt": "2024-07-08T20:53:42Z",
+      "mergedBy": "oscargdd",
+      "mergeCommit": {
+        "oid": "6e718b5fb49a6121fead00a05a3d8a29edf51fd4"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86A_dsG",
+          "commit": {
+            "abbreviatedOid": "6cd36bc"
+          },
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-08T18:53:43Z",
+          "updatedAt": "2024-07-08T18:53:43Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
