@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-25T00:37:35.606939+00:00",
+  "timestamp": "2024-07-28T00:41:23.524324+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -87,32 +87,48 @@
       "id": "I_kwDOLDCSO8589qB_",
       "title": "Optical protection scenario ?",
       "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "oscargdd",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:54:09Z",
-      "updatedAt": "2024-01-23T16:54:09Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-07-25T20:22:45Z",
+      "closedAt": "2024-07-25T20:22:45Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Added in the draft",
+          "createdAt": "2024-07-25T20:22:45Z",
+          "updatedAt": "2024-07-25T20:22:45Z"
+        }
+      ]
     },
     {
       "number": 5,
       "id": "I_kwDOLDCSO859wqrr",
       "title": "From Figure-topo3 to Figure-topo5",
       "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/5",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mlopezm1",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Is there any reason to skip Figure-topo4 in the document?",
       "createdAt": "2024-01-31T11:42:14Z",
-      "updatedAt": "2024-01-31T11:42:15Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-07-25T20:23:56Z",
+      "closedAt": "2024-07-25T20:23:55Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Fixed in latest version",
+          "createdAt": "2024-07-25T20:23:55Z",
+          "updatedAt": "2024-07-25T20:23:55Z"
+        }
+      ]
     },
     {
       "number": 7,
@@ -208,7 +224,7 @@
       "id": "I_kwDOLDCSO86F5JGN",
       "title": "Add text to explain the pre-configuration in the pluggable for the discovery case",
       "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/10",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "oscargdd",
       "authorAssociation": "OWNER",
       "assignees": [
@@ -218,9 +234,17 @@
       "labels": [],
       "body": "Add text to explain the pre-configuration in the pluggable for the discovery case",
       "createdAt": "2024-04-16T15:32:20Z",
-      "updatedAt": "2024-04-16T15:32:20Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-07-25T20:23:19Z",
+      "closedAt": "2024-07-25T20:23:19Z",
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Added the pre-configuration in the draft.",
+          "createdAt": "2024-07-25T20:23:19Z",
+          "updatedAt": "2024-07-25T20:23:19Z"
+        }
+      ]
     },
     {
       "number": 12,
