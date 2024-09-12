@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-10T00:41:02.711193+00:00",
+  "timestamp": "2024-09-12T00:40:53.096888+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -386,9 +386,17 @@
       "labels": [],
       "body": "I keep here for tracking the discussion points\r\n\r\n- packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset.\r\n- Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards.\r\n- Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC.\r\n- Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers.\r\n- Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
       "createdAt": "2024-07-08T14:01:55Z",
-      "updatedAt": "2024-07-08T14:01:55Z",
+      "updatedAt": "2024-09-10T15:57:40Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "- For the first comment, the scenarios in the draft are OK, but the following sections focus mostly on OLS based scenario. Need to dedicate also part of the work for the direct fiber scenarios.\r\n- - The use cases on breakouts need more thought. \r\n- Do we need to spill out \"coherent\" from title? (To be discussed..)\r\n- Add an scenario showing different line systems connected to the same router? (action point on operators to see the scenario)\r\n- ",
+          "createdAt": "2024-09-10T15:57:39Z",
+          "updatedAt": "2024-09-10T15:57:39Z"
+        }
+      ]
     }
   ],
   "pulls": [
