@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-24T00:42:57.911754+00:00",
+  "timestamp": "2024-09-26T00:42:30.478856+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -386,7 +386,7 @@
       "labels": [],
       "body": "I keep here for tracking the discussion points\r\n\r\n- packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset.\r\n- Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards.\r\n- Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC.\r\n- Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers.\r\n- Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
       "createdAt": "2024-07-08T14:01:55Z",
-      "updatedAt": "2024-09-18T14:36:45Z",
+      "updatedAt": "2024-09-24T15:39:15Z",
       "closedAt": null,
       "comments": [
         {
@@ -402,6 +402,13 @@
           "body": "As discussed in our last call, there are more pluggables coming up using CMIS with programmable AppSel codes; some use coherent technology, others don't. Examples for non-coherent listed below and we expect more to come in future. It would help to control these programmable modules in the same fashion, irrespective of their technology or whether they are connected to a line system or fiber.\r\n\r\n1. OSFP 800G-2xFR4 plug has 3 standard AppSels (plus 2*vendor specific ones)\r\n2. non-coherent OSFP-2X400G-VR4-P not only supports 100G per lane AppSel codes (800G-VR8, 400G-VR4, 200G-VR2, 100G-VR1) but also 50G per lane AppSel codes (400G-SR8, 200G-SR4, 100G-SR2, 50G-SR).\r\n3. 800G QSFPDD AOC supports 12 different ApSel code, that allow for 56G PAM4 or 112GPAM4 modulation, also depend on number of datapath, if multiple datapath configured, each independent datapath will have it's own clock domain.\r\n4. 800GBASE-DR8 for example, supports three different AppSel codes, and it can have one, two or eight different datapaths depending on which ApSel code was selected.\r\n ",
           "createdAt": "2024-09-18T14:36:44Z",
           "updatedAt": "2024-09-18T14:36:44Z"
+        },
+        {
+          "author": "ju7ien",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Shared during September 24th meeting. The comment deserves to be discussed in details. We understand it as \"enlarging the scope of work and be more generic\", which would be OK; the proposal will get less support if the effort to add specifics about the non-coherent is too large and may delay the outcome.\r\nTo be tackled (with Gert) in an upcoming call.",
+          "createdAt": "2024-09-24T15:39:13Z",
+          "updatedAt": "2024-09-24T15:39:13Z"
         }
       ]
     }
