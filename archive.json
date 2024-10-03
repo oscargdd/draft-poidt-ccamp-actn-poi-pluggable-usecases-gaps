@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-01T00:48:15.220148+00:00",
+  "timestamp": "2024-10-03T00:42:47.535129+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -411,6 +411,24 @@
           "updatedAt": "2024-09-24T15:39:13Z"
         }
       ]
+    },
+    {
+      "number": 23,
+      "id": "I_kwDOLDCSO86Yj6iP",
+      "title": "Use case of discovering capabilties of the router regarding support of pluggables",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/23",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "oscargdd"
+      ],
+      "labels": [],
+      "body": "In the draft we focused mainly of the use case of discovering the pluggable and the characteristics of the pluggable, \r\n\r\nThe proposal discussed in the call is the discovery of the capabilities of the router regarding pluggables. For example:\r\n\r\n- Types of pluggables accepted, modes accepted\r\n- Power limitations\r\n- Any other?",
+      "createdAt": "2024-10-01T15:15:21Z",
+      "updatedAt": "2024-10-01T15:41:40Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
