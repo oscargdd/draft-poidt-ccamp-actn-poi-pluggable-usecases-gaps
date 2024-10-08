@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-06T00:47:02.287691+00:00",
+  "timestamp": "2024-10-08T00:42:41.492229+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -386,7 +386,7 @@
       "labels": [],
       "body": "I keep here for tracking the discussion points\r\n\r\n- packet networks are predominantly linked by direct connect fibers and OLS is only a small subset. This draft deals with that subset.\r\n- Optical pluggables exist since >20years, the difference is now that coherent pluggables are way more complex to manage and they are optically interoperable as defined by standards.\r\n- Optical pluggable not only go into routers but also into transponder line-cards of optical systems and OXC.\r\n- Line systems are not controlled by one controller but are typically controlled by vendor specific controllers. Hence at typical IP/MPLS network faces the totality of OLS-systems/subnetworks which involves many O-PSC controllers.\r\n- Optical planning is not always part of the provisioning process. i.e. optical rings can be designed for any-to-any connectivity with 400ZR+ modules. Based on that design, no additional optical planning is needed during the provisioning process as the planning phase has been completed beforehand.",
       "createdAt": "2024-07-08T14:01:55Z",
-      "updatedAt": "2024-09-24T15:39:15Z",
+      "updatedAt": "2024-10-07T16:30:46Z",
       "closedAt": null,
       "comments": [
         {
@@ -409,6 +409,13 @@
           "body": "Shared during September 24th meeting. The comment deserves to be discussed in details. We understand it as \"enlarging the scope of work and be more generic\", which would be OK; the proposal will get less support if the effort to add specifics about the non-coherent is too large and may delay the outcome.\r\nTo be tackled (with Gert) in an upcoming call.",
           "createdAt": "2024-09-24T15:39:13Z",
           "updatedAt": "2024-09-24T15:39:13Z"
+        },
+        {
+          "author": "ggrammel",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "The challenge is that CMIS is for any kind of pluggable and not specific to coherent. Also programmability is not limited to coherent modules (see https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/21#issuecomment-2358654631). Moreover PAM is also delivered over line systems and newer modules are programmable too.\r\nIt might be useful to phrase Use Case descriptions in a technology neutral manner.",
+          "createdAt": "2024-10-07T16:30:45Z",
+          "updatedAt": "2024-10-07T16:30:45Z"
         }
       ]
     },
