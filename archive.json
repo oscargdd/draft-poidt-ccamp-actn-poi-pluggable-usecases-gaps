@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-15T00:43:34.196490+00:00",
+  "timestamp": "2024-10-17T00:43:00.947535+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -433,9 +433,17 @@
       "labels": [],
       "body": "In the draft we focused mainly of the use case of discovering the pluggable and the characteristics of the pluggable, \r\n\r\nThe proposal discussed in the call is the discovery of the capabilities of the router regarding pluggables. For example:\r\n\r\n- Types of pluggables accepted, modes accepted\r\n- Power limitations\r\n- Any other?",
       "createdAt": "2024-10-01T15:15:21Z",
-      "updatedAt": "2024-10-01T15:41:40Z",
+      "updatedAt": "2024-10-15T15:38:09Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "In the call it was proposed also to consider functional limitations (e.g. breakout functionality)\r\n\r\nIn the call it was discussed that the power limitations can be complex to model. In the draft we could avoid entering in defining the exact model, but point out the gap, so the work could be done in Green WG or IVY.",
+          "createdAt": "2024-10-15T15:32:39Z",
+          "updatedAt": "2024-10-15T15:38:09Z"
+        }
+      ]
     },
     {
       "number": 24,
@@ -450,6 +458,22 @@
       "body": "The name of the draft suggests it is about gaps related to pluggable technology: draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-01\r\nHowever, the title limits it to coherent technology only: Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with _coherent_ plugables under ACTN Framework\r\n\r\nReference is made to CMIS, which covers all kind of pluggables and is not limited to a technology or media.\r\n\r\nRouters also need to manage pluggables of non-coherent nature that can be connected to Optical line systems (e.g. PAM4). Furthermore, technology exists that uses coherent submodulated carriers which can be used in a PON structure.\r\n\r\nIt is strange to see the draft limiting itself to the combination of pluggables with coherent modulation as opposed to pluggables in general or pluggables that can be connected to Optical Line Systems.",
       "createdAt": "2024-10-08T15:06:21Z",
       "updatedAt": "2024-10-08T15:06:21Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 25,
+      "id": "I_kwDOLDCSO86aU08p",
+      "title": "Add the use case of information per mode available in the pluggable",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/issues/25",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "(aligned with OIF whitepaper) + other information (such as expected power consumption). \r\n",
+      "createdAt": "2024-10-15T15:32:02Z",
+      "updatedAt": "2024-10-15T15:32:03Z",
       "closedAt": null,
       "comments": []
     }
