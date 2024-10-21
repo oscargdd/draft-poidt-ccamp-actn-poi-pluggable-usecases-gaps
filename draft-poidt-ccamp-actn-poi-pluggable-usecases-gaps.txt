@@ -5,14 +5,14 @@
 ccamp                                                      O. G. de Dios
 Internet-Draft                                                Telefonica
 Intended status: Informational                               J. Bouquier
-Expires: 9 January 2025                                         Vodafone
+Expires: 24 April 2025                                          Vodafone
                                                                J. Meuric
                                                                   Orange
                                                                G. Mishra
                                                                  Verizon
                                                            G. Galimberti
                                                               Individual
-                                                             8 July 2024
+                                                         21 October 2024
 
 
     Use cases, Network Scenarios and gap analysis for Packet Optical
@@ -57,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 9 January 2025.
+   This Internet-Draft will expire on 24 April 2025.
 
 Copyright Notice
 
