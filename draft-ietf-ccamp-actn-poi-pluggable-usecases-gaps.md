@@ -1,5 +1,5 @@
 ---
-title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable plugables under ACTN Framework"
+title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework"
 abbrev: "POI coherent pluggables"
 docname: draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest
 
