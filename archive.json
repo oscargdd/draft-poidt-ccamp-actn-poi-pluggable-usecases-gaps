@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-22T00:43:49.648926+00:00",
+  "timestamp": "2024-10-24T00:43:08.771982+00:00",
   "repo": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
   "labels": [
     {
@@ -58,13 +58,30 @@
       "state": "OPEN",
       "author": "oscargdd",
       "authorAssociation": "OWNER",
-      "assignees": [],
+      "assignees": [
+        "ggalimba56"
+      ],
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:37:26Z",
-      "updatedAt": "2024-01-23T16:37:26Z",
+      "updatedAt": "2024-10-22T15:47:07Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Agreed in the call to add in the figure IP Link over EThernet.\r\n\r\nExplain in text the there might be cases with ethernet only (e.g. between switches).\r\n\r\n",
+          "createdAt": "2024-10-22T15:45:46Z",
+          "updatedAt": "2024-10-22T15:45:46Z"
+        },
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "@ggalimba56  and @ggrammel  please work togher to address the changes",
+          "createdAt": "2024-10-22T15:47:06Z",
+          "updatedAt": "2024-10-22T15:47:06Z"
+        }
+      ]
     },
     {
       "number": 2,
@@ -74,13 +91,23 @@
       "state": "OPEN",
       "author": "oscargdd",
       "authorAssociation": "OWNER",
-      "assignees": [],
+      "assignees": [
+        "oscargdd"
+      ],
       "labels": [],
       "body": "",
       "createdAt": "2024-01-23T16:50:24Z",
-      "updatedAt": "2024-01-23T16:50:24Z",
+      "updatedAt": "2024-10-22T16:01:28Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "The priorities of the operators are scenarios without restoration. Such scenario can be opened in a continutation draft. ",
+          "createdAt": "2024-10-22T16:01:26Z",
+          "updatedAt": "2024-10-22T16:01:26Z"
+        }
+      ]
     },
     {
       "number": 3,
@@ -457,9 +484,17 @@
       "labels": [],
       "body": "The name of the draft suggests it is about gaps related to pluggable technology: draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps-01\r\nHowever, the title limits it to coherent technology only: Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with _coherent_ plugables under ACTN Framework\r\n\r\nReference is made to CMIS, which covers all kind of pluggables and is not limited to a technology or media.\r\n\r\nRouters also need to manage pluggables of non-coherent nature that can be connected to Optical line systems (e.g. PAM4). Furthermore, technology exists that uses coherent submodulated carriers which can be used in a PON structure.\r\n\r\nIt is strange to see the draft limiting itself to the combination of pluggables with coherent modulation as opposed to pluggables in general or pluggables that can be connected to Optical Line Systems.",
       "createdAt": "2024-10-08T15:06:21Z",
-      "updatedAt": "2024-10-08T15:06:21Z",
+      "updatedAt": "2024-10-22T14:26:57Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "oscargdd",
+          "authorAssociation": "OWNER",
+          "body": "Fixed in https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/26 \r\n\r\n@ggrammel  Please provide some more text fro the introduction\r\n\r\n@ggalimba56  @jbouqui153 can you review it?",
+          "createdAt": "2024-10-22T14:26:55Z",
+          "updatedAt": "2024-10-22T14:26:55Z"
+        }
+      ]
     },
     {
       "number": 25,
@@ -1064,6 +1099,59 @@
           "createdAt": "2024-07-08T18:53:43Z",
           "updatedAt": "2024-07-08T18:53:43Z",
           "comments": []
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "id": "PR_kwDOLDCSO85_eLFY",
+      "title": "Generalize name of draft",
+      "url": "https://github.com/oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps/pull/26",
+      "state": "OPEN",
+      "author": "oscargdd",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Draft can cover programmable pluggables in general",
+      "createdAt": "2024-10-22T14:25:43Z",
+      "updatedAt": "2024-10-22T15:28:36Z",
+      "baseRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "baseRefName": "main",
+      "baseRefOid": "24e54bee2e88613a13749a5a5981d9d42140b349",
+      "headRepository": "oscargdd/draft-poidt-ccamp-actn-poi-pluggable-usecases-gaps",
+      "headRefName": "01-version",
+      "headRefOid": "87184ee7ce6810dbd342c1c1a8079485d3c3cd70",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLDCSO86OLlaR",
+          "commit": {
+            "abbreviatedOid": "ed34295"
+          },
+          "author": "jbouqui153",
+          "authorAssociation": "COLLABORATOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2024-10-22T14:30:44Z",
+          "updatedAt": "2024-10-22T14:41:08Z",
+          "comments": [
+            {
+              "originalPosition": 3,
+              "body": "Would use pluggables with two g as in the rest of the document",
+              "createdAt": "2024-10-22T14:30:44Z",
+              "updatedAt": "2024-10-22T14:41:08Z"
+            },
+            {
+              "originalPosition": 12,
+              "body": "Should we briefly mentioned what we mean by \"programmable\" pluggables? Would at least mention this name has been chosen to cover both coherent and non-coherent pluggables which can be fully managed through an open and standard interface?",
+              "createdAt": "2024-10-22T14:39:35Z",
+              "updatedAt": "2024-10-22T14:41:08Z"
+            }
+          ]
         }
       ]
     }
