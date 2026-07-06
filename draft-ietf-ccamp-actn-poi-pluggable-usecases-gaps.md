@@ -1,4 +1,4 @@
----
+****---
 title: "Use cases, Network Scenarios and gap analysis for Packet Optical Integration (POI) with programmable pluggables under ACTN Framework"
 abbrev: "POI programmable pluggables"
 docname: draft-ietf-ccamp-actn-poi-pluggable-usecases-gaps-latest
@@ -445,7 +445,7 @@ Some coherent pluggables seem to come with a factory default set of provisioning
 It is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of factory default provisioning parameters may be fine but they shall always be able to be overwritten through router CLI or through Packet PNC to another set of  default provisioning parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC or due to a power off/on) shall always go back to this operator’s default set of provisioning parameters where, for example, the laser-state shall be ‘Off’ and admin-state ‘disabled’.
 
 #### Inventory of Coherent DWDM pluggable ('valid for coherent pluggable').
-The pluggable can provite to the host all the pluggable information including the capabilities list.
+The pluggable can provide to the host all the pluggable information including the capabilities list.
 This information is flowing through the CMIS interface between the pluggable and the host.
 The capability list summarizes all the way the pluggable can work, e.g. 100G DQPSK and 400G 16QAM.
 The host will notify this inventory information to the Controller in order to:
@@ -456,7 +456,7 @@ The host will notify this inventory information to the Controller in order to:
 - provision the pluggable with the correct parameters values
 
 The modelling of the pluggable inventory information, provisioning and operational statea are not in the scope of this document and will be define in the {{?I-D.draft-ietf-teas-actn-poi-applicability}} and
-{{?I-D.draft-ietf-ccamp--dwdm-if-param-yang}} 
+{{?I-D.draft-ietf-ccamp--dwdm-if-param-yang}}
 
 
 #### Coherent pluggable OTSi service discovery information ('valid for coherent pluggable').
