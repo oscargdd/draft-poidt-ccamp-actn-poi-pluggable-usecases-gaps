@@ -308,7 +308,7 @@ In many cases, the operators' packet over optical networks will most likely be a
 
 This section provides a set of packet over optical network scenarios, starting with the most common ones.
 
-Throughout the document the term "IP link" refers to a layer 3 link that connects two layer-3 capable devices. It is common that the layer 3 link is supported over Ethernet as layer 2. 
+Throughout the document the term "IP link" refers to a layer 3 link that connects two layer-3 capable devices. It is common that the layer 3 link is supported over Ethernet as layer 2.
 
 ## Scenario A - High capacity point to point connection over dedicated direct fiber
 
