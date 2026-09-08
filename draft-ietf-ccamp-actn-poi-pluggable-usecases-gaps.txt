@@ -5,14 +5,14 @@
 ccamp                                                      O. G. de Dios
 Internet-Draft                                                Telefonica
 Intended status: Informational                               J. Bouquier
-Expires: 20 September 2026                                      Vodafone
+Expires: 12 March 2027                                          Vodafone
                                                                J. Meuric
                                                                   Orange
                                                                G. Mishra
                                                                  Verizon
                                                            G. Galimberti
                                                               Individual
-                                                           19 March 2026
+                                                        8 September 2026
 
 
     Use cases, Network Scenarios and gap analysis for Packet Optical
@@ -58,7 +58,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 September 2026.
+   This Internet-Draft will expire on 12 March 2027.
 
 Copyright Notice
 
@@ -397,6 +397,10 @@ Table of Contents
    This section provides a set of packet over optical network scenarios,
    starting with the most common ones.
 
+   Throughout the document the term "IP link" refers to a layer 3 link
+   that connects two layer-3 capable devices.  It is common that the
+   layer 3 link is supported over Ethernet as layer 2.
+
 4.1.  Scenario A - High capacity point to point connection over
       dedicated direct fiber
 
@@ -614,19 +618,21 @@ Table of Contents
 5.1.1.2.  Inventory of Coherent DWDM pluggable ('valid for coherent
           pluggable').
 
-   The domain controller exposes to the MDSC hardware inventory
-   information of the devices under its supervision.  [TODO: re-phrase
-   in architecture independent manner] For full router inventory
-   (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang.
-   In addition, capability information shall include the coherent
-   pluggable transceiver capabilities.  These include, for instance,
-   operational-modes supported (ITU-T application codes, organizational
-   modes), min/max central-frequency range supported, min/max output
-   power supported, min/max received power supported etc.  In case of
-   discovery of any HW mismatch between coherent pluggable and router
-   linecard port capabilities the controller shall report HW mismatch
-   alarm to MDSC.  An example is a linecard multi-rate port vs coherent
-   pluggable with only one client/line rate (e.g. 1x400GE).
+   The pluggable can provide to the host all the pluggable information
+   including the capabilities list.  This information is flowing through
+   the CMIS interface between the pluggable and the host.  The
+   capability list summarizes all the way the pluggable can work, e.g.
+   100G DQPSK and 400G 16QAM.  The host will notify this inventory
+   information to the Controller in order to: - update the inventory
+   database - define the proper optical path - chose the right
+   capability (the operational mode, power, wavelenght, etc.) - verify
+   the optical feasibility - provision the pluggable with the correct
+   parameters values
+
+   The modelling of the pluggable inventory information, provisioning
+   and operational statea are not in the scope of this document and will
+   be define in the [I-D.draft-ietf-teas-actn-poi-applicability] and
+   [I-D.draft-ietf-ccamp--dwdm-if-param-yang]
 
 5.1.1.3.  Coherent pluggable OTSi service discovery information ('valid
           for coherent pluggable').
@@ -868,18 +874,21 @@ Table of Contents
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-23, 27
-              February 2026, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-ccamp-optical-impairment-topology-yang-23>.
+              ietf-ccamp-optical-impairment-topology-yang-24, 22 June
+              2026, <https://datatracker.ietf.org/doc/html/draft-ietf-
+              ccamp-optical-impairment-topology-yang-24>.
 
    [I-D.draft-ietf-teas-actn-poi-applicability]
               Peruzzini, F., Bouquier, J., Busi, I., King, D., and D.
               Ceccarelli, "Applicability of Abstraction and Control of
               Traffic Engineered Networks (ACTN) to Packet Optical
               Integration (POI)", Work in Progress, Internet-Draft,
-              draft-ietf-teas-actn-poi-applicability-18, 14 March 2026,
+              draft-ietf-teas-actn-poi-applicability-20, 31 August 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-teas-
-              actn-poi-applicability-18>.
+              actn-poi-applicability-20>.
+
+   [I-D.draft-ietf-ccamp--dwdm-if-param-yang]
+              "*** BROKEN REFERENCE ***".
 
 Appendix A.  Acknowledgments
 
