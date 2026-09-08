@@ -308,7 +308,7 @@ In many cases, the operators' packet over optical networks will most likely be a
 
 This section provides a set of packet over optical network scenarios, starting with the most common ones.
 
-Throughout the document the term "IP link" refers to a layer 3 link that connects two layer-3 capable devices. It is common that the layer 3 link is supported over Ethernet as layer 2. 
+Throughout the document the term "IP link" refers to a layer 3 link that connects two layer-3 capable devices. It is common that the layer 3 link is supported over Ethernet as layer 2.
 
 ## Scenario A - High capacity point to point connection over dedicated direct fiber
 
@@ -445,7 +445,19 @@ Some coherent pluggables seem to come with a factory default set of provisioning
 It is critical for operators to have the same kind of commissioning phase independently of the deployment scenario: point-to-point vs ROADM meshed OLS network. As a consequence, the use of factory default provisioning parameters may be fine but they shall always be able to be overwritten through router CLI or through Packet PNC to another set of  default provisioning parameters defined by the operator that will change from pluggable to pluggable when deployed over an OLS network. A reset of the coherent pluggable (through router CLI or through Packet PNC or due to a power off/on) shall always go back to this operator’s default set of provisioning parameters where, for example, the laser-state shall be ‘Off’ and admin-state ‘disabled’.
 
 #### Inventory of Coherent DWDM pluggable ('valid for coherent pluggable').
-The domain controller exposes to the MDSC hardware inventory information of the devices under its supervision. \[TODO: re-phrase in architecture independent manner] For full router inventory (linecards, ports, etc.) see draft-ietf-ivy-network-inventory-yang. In addition, capability information shall include the coherent pluggable transceiver capabilities. These include, for instance, operational-modes supported (ITU-T application codes, organizational modes), min/max central-frequency range supported, min/max output power supported, min/max received power supported etc. In case of discovery of any HW mismatch between coherent pluggable and router linecard port capabilities the controller shall report HW mismatch alarm to MDSC. An example is a linecard multi-rate port vs coherent pluggable with only one client/line rate (e.g. 1x400GE).
+The pluggable can provide to the host all the pluggable information including the capabilities list.
+This information is flowing through the CMIS interface between the pluggable and the host.
+The capability list summarizes all the way the pluggable can work, e.g. 100G DQPSK and 400G 16QAM.
+The host will notify this inventory information to the Controller in order to:
+- update the inventory database
+- define the proper optical path
+- chose the right capability (the operational mode, power, wavelenght, etc.)
+- verify the optical feasibility
+- provision the pluggable with the correct parameters values
+
+The modelling of the pluggable inventory information, provisioning and operational statea are not in the scope of this document and will be define in the {{?I-D.draft-ietf-teas-actn-poi-applicability}} and
+{{?I-D.draft-ietf-ccamp--dwdm-if-param-yang}}
+
 
 #### Coherent pluggable OTSi service discovery information ('valid for coherent pluggable').
 
